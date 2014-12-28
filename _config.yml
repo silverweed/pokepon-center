@@ -1,0 +1,22 @@
+# Site settings
+title: Pokepon Center
+email: silverweed1991@gmail.com 
+description: > # this means to ignore newlines until "baseurl:"
+  A Pok&eacute;mon-like multiplayer battle simulator with ponies.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://pokepon.center" # the base hostname & protocol for your site
+github_username:  silverweed
+timezone: Europe/Rome
+
+# Build settings
+markdown: kramdown
+
+# Front Matter defaults
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: "post"
+            author: "silverweed"
