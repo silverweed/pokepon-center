@@ -21,7 +21,7 @@ class Ponydex
                     sugg.data[type] = []
 
                 for elem of @data[type]
-                    if elem.startsWith str.toLowerCase()
+                    if elem.startsWith str.replace(///\s+///g, "").toLowerCase()
                         sugg.data[type].push @data[type][elem]
 
         sugg.on = (what) ->
@@ -36,7 +36,7 @@ class Ponydex
                         ul.innerHTML += "<li><h3>#{type}</h3></li>"
                         console.log sugg.data[type]
                         for elem in sugg.data[type]
-                            ul.innerHTML += "<li>#{elem.name}</li>"
+                            ul.innerHTML += "<li><a href='#'>#{elem.name}</a></li>"
                     what.innerHTML = ul.outerHTML
                     return null
         return sugg

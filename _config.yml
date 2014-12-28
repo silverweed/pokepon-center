@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://pokepon.center" # the base hostname & protocol for your site
 github_username:  silverweed
 timezone: Europe/Rome
+exclude: [ util ]
 
 # Build settings
 markdown: kramdown
