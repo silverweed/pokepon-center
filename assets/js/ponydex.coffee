@@ -33,6 +33,7 @@ class Ponydex
                         return
                     ul = document.createElement 'ul'
                     for type of sugg.data
+                        continue if sugg.data[type].length < 1
                         ul.innerHTML += "<li><h3>#{type}</h3></li>"
                         console.log sugg.data[type]
                         for elem in sugg.data[type]
