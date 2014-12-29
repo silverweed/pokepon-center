@@ -21,5 +21,116 @@ input.dexbar {
 			padding-left: 3px;
 			box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6) inset, 0 2px 2px rgba(0, 0, 0, 0.15);
 		}
+		.result-stats {
+			font-size: 70%;
+			display: inline-block;
+			& th {
+				color: gray;
+				font-weight: normal;
+				width: 20px;
+				margin: 0;
+				padding: 0;
+			}
+			& td {
+				text-align: right;
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
+	span {
+		&.result-name {
+			display: inline-block;
+			width: 130px;
+		}
+		&.result-typing {
+			display: inline-block;
+			width: 100px;
+		}
+		&.type {
+			display: inline-block;
+			padding: 1px;
+			border-radius: 3px;
+			font-size: 60%;
+			overflow: hidden;
+			text-overflow: ".";
+			width: 32px;
+			text-align: center;
+			box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+			text-shadow: 0.8px 0.8px 1px rgba(120, 120, 120, 0.6);
+		}
+	}
+
+}
+
+// Types colors
+.type-chaos {
+	color: #522900;
+	border-color: #522900;
+	background-color: #94704D;
+}
+.type-generosity {
+	color: #6B008F;
+	border-color: #9900CC;
+	background-color: #B84DDB;
+}
+.type-honesty {
+	color: #CC5200;
+	border-color: #FF6600;
+	background-color: #FF944D;
+}
+.type-kindness {
+	color: #CCCC52;
+	border-color: #FFFF66;
+	background-color: #FFFFA3;
+}
+.type-laughter {
+	color: #FF0099;
+	border-color: #FF0099;
+	background-color: #FF80CC;
+}
+.type-light {
+	color: #999900;
+	border-color: #999900;
+	background-color: #FFFF00;
+}
+.type-love {
+	color: #CC52CC;
+	border-color: #FF66FF;
+	background-color: #FFA2FF;
+}
+.type-loyalty {
+	color: #0000FF;
+	border-color: #0000FF;
+	background-color: #9999FF;
+}
+.type-magic {
+	color: #7A007A;
+	border-color: #990099;
+	background-color: #C266C2;
+}
+.type-music {
+	color: #00B26B;
+	border-color: #00FF99;
+	background-color: #99FFD6;
+}
+.type-night {
+	color: #000055;
+	border-color: #000055;
+	background-color: #4D4D88;
+}
+.type-passion {
+	color: #9B0000;
+	border-color: #9B0000;
+	background-color: #EB6666;
+}
+.type-shadow {
+	color: #000000;
+	border-color: #111111;
+	background-color: #444444;
+}
+.type-spirit {
+	color: #666666;
+	border-color: #666666;
+	background-color: #BBBBBB;
 }

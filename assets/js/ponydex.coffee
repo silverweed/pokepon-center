@@ -12,6 +12,45 @@ class Ponydex
     dump: () ->
         console.log @data
 
+    @emitHTMLfor: (type, elem) ->
+        html = ''
+        switch type
+            when 'ponies'
+                emitTypingHTML = (typing) ->
+                    return (typing.map (type) -> return "<span class=\" type type-#{type.toLowerCase()}\">#{type}</span>").join " "
+                bst = 0
+                for stat of elem.stats
+                    bst += elem.stats[stat]
+                html = """
+                    <li>
+                        <!-- TODO: image -->
+                        <span class="result-name"><a href='#'>#{elem.name}</a></span>
+                        <span class="result-typing">#{emitTypingHTML(elem.typing)}</span>
+                        <table class="result-stats">
+                            <tr>
+                                <th>HP</th>
+                                <th>Atk</th>
+                                <th>Def</th>
+                                <th>SpA</th>
+                                <th>SpD</th>
+                                <th>Spe</th>
+                                <th>BST</th>
+                            </tr>
+                            <tr>
+                                <td>#{elem.stats.hp}</td>
+                                <td>#{elem.stats.atk}</td>
+                                <td>#{elem.stats.def}</td>
+                                <td>#{elem.stats.spa}</td>
+                                <td>#{elem.stats.spd}</td>
+                                <td>#{elem.stats.spe}</td>
+                                <td style=\"color: gray; padding-left: 1px\">#{bst}</td>
+                            </tr>
+                        </table>
+                    </li>"""
+                return html
+            else
+                return "<li><a href='#'>#{elem.name}</a></li>"
+
     suggest: (str) ->
         sugg =
             data: {}
@@ -37,7 +76,7 @@ class Ponydex
                         ul.innerHTML += "<li><h3>#{type}</h3></li>"
                         console.log sugg.data[type]
                         for elem in sugg.data[type]
-                            ul.innerHTML += "<li><a href='#'>#{elem.name}</a></li>"
+                            ul.innerHTML += Ponydex.emitHTMLfor type, elem
                     what.innerHTML = ul.outerHTML
                     return null
         return sugg
