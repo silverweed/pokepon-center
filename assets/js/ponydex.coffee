@@ -17,7 +17,7 @@ class Ponydex
         switch type
             when 'ponies'
                 emitTypingHTML = (typing) ->
-                    return (typing.map (type) -> return "<span class=\" type type-#{type.toLowerCase()}\">#{type}</span>").join " "
+                    return (typing.map (type) -> return "<span class=\"type type-#{type.toLowerCase()}\">#{type}</span>").join " "
                 bst = 0
                 for stat of elem.stats
                     bst += elem.stats[stat]
@@ -26,7 +26,7 @@ class Ponydex
                         <!-- TODO: image -->
                         <a href='#'>
                             <span class="result-name">#{elem.name}</span>
-                            <span class="result-typing">#{emitTypingHTML(elem.typing)}</span>
+                            <span class="result-typing">#{emitTypingHTML elem.typing}</span>
                             <table class="result-stats">
                                 <tr>
                                     <th>HP</th>
@@ -51,7 +51,18 @@ class Ponydex
                     </li>"""
                 return html
             else
-                return "<li class=\"result\"><a href='#'>#{elem.name}</a></li>"
+                types = undefined
+                if type is 'moves'
+                    types = "<span class=\"type type-#{elem.type.toLowerCase()}\">#{elem.type}</span>" +
+                        " <span class=\"type movetype-#{elem.movetype.toLowerCase()}\">#{elem.movetype}</span>"
+                   
+                return """
+                    <li class="result">
+                        <a href='#'>
+                            <span class="result-name">#{elem.name}</span>#{if types? then types else ""}
+                            <span class="result-desc">#{elem.description.replace ///<br.?>///g, ''}</span>
+                        </a>
+                    </li>"""
 
     suggest: (str) ->
         sugg =

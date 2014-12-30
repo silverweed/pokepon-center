@@ -30,10 +30,12 @@ input.dexbar {
 			background-color: #dae5f0;
 			border: 1px solid #aaaaaa;
 			border-radius: 3px;
+			margin-top: 3px;
 			padding-left: 3px;
 			box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6) inset, 0 2px 2px rgba(0, 0, 0, 0.15);
 		}
 		.result-stats {
+			vertical-align: middle;
 			font-size: 70%;
 			display: inline-block;
 			color: #222;
@@ -52,6 +54,7 @@ input.dexbar {
 		}
 	}
 	span {
+		vertical-align: middle;
 		&.result-name {
 			display: inline-block;
 			width: 130px;
@@ -60,8 +63,13 @@ input.dexbar {
 			display: inline-block;
 			width: 100px;
 		}
+		&.result-desc {
+			color: #555;
+			font-size: 70%;
+		}
 		&.type {
 			display: inline-block;
+			opacity: 0.5;
 			padding: 1px;
 			border-radius: 3px;
 			font-size: 60%;
@@ -146,4 +154,19 @@ input.dexbar {
 	color: #666666;
 	border-color: #666666;
 	background-color: #BBBBBB;
+}
+.movetype-physical {
+	color: #f78421;
+	border-color: #901D11;
+	background-color: #ce2918;
+}
+.movetype-special {
+	color: #ffffff;
+	border-color: #363B4A;
+	background-color: #5a637b;
+}
+.movetype-status {
+	color: #ffffff;
+	border-color: #696669;
+	background-color: #969296;
 }
