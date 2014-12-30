@@ -14,6 +14,7 @@ my $name;
 my $race;
 my $sex;
 my $movetype;
+my $pp = 0;
 my $damage = 0;
 my $accuracy = 0;
 my $priority = 0;
@@ -57,6 +58,9 @@ foreach $line (<STREAM>) {
 		} elsif($line =~ /moveType = Move\.MoveType\.([A-Z]+)/) {
 			$movetype = $1;
 
+		} elsif($line =~ /maxpp = pp = (-?[0-9]+)/) {
+			$pp = $1;
+			
 		} elsif($line =~ /baseDamage = ([0-9]+)/) {
 			$damage = $1;
 
@@ -115,6 +119,7 @@ if($type eq 'pony') {
 			name: \"$name\",
 			type: '$type[0]',
 			movetype: '$movetype',
+			pp: $pp,
 			damage: $damage,
 			accuracy: $accuracy,
 			prority: $priority,

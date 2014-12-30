@@ -50,17 +50,37 @@ class Ponydex
                         </a>
                     </li>"""
                 return html
-            else
-                types = undefined
-                if type is 'moves'
-                    types = "<span class=\"type type-#{elem.type.toLowerCase()}\">#{elem.type}</span>" +
-                        " <span class=\"type movetype-#{elem.movetype.toLowerCase()}\">#{elem.movetype}</span>"
-                   
+            when 'moves'
+                conv = (x) -> if x <= 0 then return '-' else return x
                 return """
                     <li class="result">
                         <a href='#'>
-                            <span class="result-name">#{elem.name}</span>#{if types? then types else ""}
-                            <span class="result-desc">#{elem.description.replace ///<br.?>///g, ''}</span>
+                            <span class="result-name">#{elem.name}</span>
+                            <span class="result-typing">
+                                <span class="type type-#{elem.type.toLowerCase()}">#{elem.type}</span>
+                                <span class="type movetype-#{elem.movetype.toLowerCase()}">#{elem.movetype}</span>
+                            </span>
+                            <table class="result-move">
+                                <tr>
+                                    <th>Power</th>
+                                    <th>Accur.</th>
+                                    <th>PP</th>
+                                </tr>
+                                <tr>
+                                    <td>#{conv elem.damage}</td>
+                                    <td>#{conv elem.accuracy}</td>
+                                    <td>#{conv elem.pp}</td>
+                                </tr>
+                            </table>
+                            <span class="result-desc">#{elem.description.replace ///<br.?>///g, ' '}</span>
+                        </a>
+                    </li>"""
+            else
+                return """
+                    <li class="result">
+                        <a href='#'>
+                            <span class="result-name">#{elem.name}</span>
+                            <span class="result-desc">#{elem.description.replace ///<br.?>///g, ' '}</span>
                         </a>
                     </li>"""
 
