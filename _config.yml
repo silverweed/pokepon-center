@@ -1,6 +1,7 @@
 # Site settings
 title: Pok&eacute;pon Center
 email: silverweed1991@gmail.com 
+host: silverjail.jail
 description: > # this means to ignore newlines until "baseurl:"
   A Pok&eacute;mon-like multiplayer battle simulator with ponies - <a href=
   'https://github.com/silverweed/pokepon-center'>GitHub</a>

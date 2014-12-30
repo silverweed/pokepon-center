@@ -12,6 +12,18 @@ input.dexbar {
 
 .dexresults {
 	li {
+		border: 0.5px ridge transparent;
+		&.result {
+			&:hover {
+				background-color: #dae5f0;
+				border: 0.5px ridge #d8d8d8;
+			}
+			& a {
+				display: block;
+				text-decoration: none;
+				padding: 0 15px;
+			}
+		}
 		list-style-type: none;
 		border-radius: 3px;
 		h3 {
@@ -24,6 +36,7 @@ input.dexbar {
 		.result-stats {
 			font-size: 70%;
 			display: inline-block;
+			color: #222;
 			& th {
 				color: gray;
 				font-weight: normal;

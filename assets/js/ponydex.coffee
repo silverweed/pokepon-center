@@ -22,34 +22,36 @@ class Ponydex
                 for stat of elem.stats
                     bst += elem.stats[stat]
                 html = """
-                    <li>
+                    <li class="result">
                         <!-- TODO: image -->
-                        <span class="result-name"><a href='#'>#{elem.name}</a></span>
-                        <span class="result-typing">#{emitTypingHTML(elem.typing)}</span>
-                        <table class="result-stats">
-                            <tr>
-                                <th>HP</th>
-                                <th>Atk</th>
-                                <th>Def</th>
-                                <th>SpA</th>
-                                <th>SpD</th>
-                                <th>Spe</th>
-                                <th>BST</th>
-                            </tr>
-                            <tr>
-                                <td>#{elem.stats.hp}</td>
-                                <td>#{elem.stats.atk}</td>
-                                <td>#{elem.stats.def}</td>
-                                <td>#{elem.stats.spa}</td>
-                                <td>#{elem.stats.spd}</td>
-                                <td>#{elem.stats.spe}</td>
-                                <td style=\"color: gray; padding-left: 1px\">#{bst}</td>
-                            </tr>
-                        </table>
+                        <a href='#'>
+                            <span class="result-name">#{elem.name}</span>
+                            <span class="result-typing">#{emitTypingHTML(elem.typing)}</span>
+                            <table class="result-stats">
+                                <tr>
+                                    <th>HP</th>
+                                    <th>Atk</th>
+                                    <th>Def</th>
+                                    <th>SpA</th>
+                                    <th>SpD</th>
+                                    <th>Spe</th>
+                                    <th>BST</th>
+                                </tr>
+                                <tr>
+                                    <td>#{elem.stats.hp}</td>
+                                    <td>#{elem.stats.atk}</td>
+                                    <td>#{elem.stats.def}</td>
+                                    <td>#{elem.stats.spa}</td>
+                                    <td>#{elem.stats.spd}</td>
+                                    <td>#{elem.stats.spe}</td>
+                                    <td style=\"color: gray; padding-left: 1px\">#{bst}</td>
+                                </tr>
+                            </table>
+                        </a>
                     </li>"""
                 return html
             else
-                return "<li><a href='#'>#{elem.name}</a></li>"
+                return "<li class=\"result\"><a href='#'>#{elem.name}</a></li>"
 
     suggest: (str) ->
         sugg =

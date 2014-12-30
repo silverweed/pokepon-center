@@ -4,8 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Pok&eacute;pon is an [open source](https://github.com/silverweed/pokepon) Pok&eacute;mon-like
+videogame featuring characters from the My Little Pony universe.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+The game aims to be a multiplayer client-server based battling platform in a similar fashion as
+[Pokémon-Showdown](http://pokemonshowdown.com).
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Pok&eacute;pon is currently in development (pre-Alpha) stage, and it's being developed by
+[silverweed](https://github.com/silverweed).
