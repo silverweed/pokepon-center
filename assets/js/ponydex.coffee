@@ -17,7 +17,7 @@ class Ponydex
         switch type
             when 'ponies'
                 emitTypingHTML = (typing) ->
-                    return (typing.map (type) -> return "<span class=\"type type-#{type.toLowerCase()}\">#{type}</span>").join " "
+                    return (Array.prototype.slice.call(typing).map (type) -> return "<span class=\"type type-#{type.toLowerCase()}\">#{type}</span>").join " "
                 bst = 0
                 for stat of elem.stats
                     bst += elem.stats[stat]
