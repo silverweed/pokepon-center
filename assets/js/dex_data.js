@@ -285,7 +285,7 @@ var dexData = {
 				spd: 130,
 				spe: 85
 			},
-			moves: [ 'nightwind', 'hiddentalent', 'meditation', 'balefire', 'mirrorpond', 'powerdisplay', 'scareaway', 'teleportblast', 'surprisehit', 'schemeup', 'sneakattack', 'dodge', 'tackle', 'magicblast', 'skydive', 'hornbeam', 'nastyplot', 'mutate', 'glowinglaser' ],
+			moves: [ 'nightwind', 'hiddentalent', 'meditation', 'balefire', 'mirrorpond', 'powerdisplay', 'scareaway', 'teleportblast', 'surprisehit', 'schemeup', 'sneakattack', 'dodge', 'tackle', 'magicblast', 'skydive', 'hornbeam', 'evilplot', 'mutate', 'glowinglaser' ],
 			abilities: [ '' ]
 		},
 		'cocopommel': {
@@ -893,7 +893,7 @@ var dexData = {
 				spd: 40,
 				spe: 15
 			},
-			moves: [ 'flitabout', 'hiddentalent', 'trailblazer', 'stare', 'sonicrainboom', 'raisesun', 'partycannon', 'nastyplot', 'mutate', 'loveburst', 'joke', 'gemstorm', 'furrycoat', 'eternalnight', 'bulletshower', 'bizaam', 'bassdrop', 'basscannon', 'balefire', 'venompotion', 'lullaby', 'freezespell', 'chatter', 'burningpowder' ],
+			moves: [ 'flitabout', 'hiddentalent', 'trailblazer', 'stare', 'sonicrainboom', 'raisesun', 'partycannon', 'evilplot', 'mutate', 'loveburst', 'joke', 'gemstorm', 'furrycoat', 'eternalnight', 'bulletshower', 'bizaam', 'bassdrop', 'basscannon', 'balefire', 'venompotion', 'lullaby', 'freezespell', 'chatter', 'burningpowder' ],
 			abilities: [ '' ]
 		},
 		'princessluna': {
@@ -1594,6 +1594,16 @@ var dexData = {
 			prority: 0,
 			description: "Spawns Dark weather for 5 turns."
 		},
+		'evilplot': {
+			name: "Evil Plot",
+			type: 'SHADOW',
+			movetype: 'PHYSICAL',
+			pp: 10,
+			damage: 100,
+			accuracy: 90,
+			prority: 0,
+			description: "20% to raise user Evasion by 1."
+		},
 		'flitabout': {
 			name: "Flit About",
 			type: 'CHAOS',
@@ -1903,16 +1913,6 @@ var dexData = {
 			accuracy: -1,
 			prority: 0,
 			description: "User sleeps 2 turns to refill HP and cure status."
-		},
-		'nastyplot': {
-			name: "Nasty Plot",
-			type: 'SHADOW',
-			movetype: 'PHYSICAL',
-			pp: 10,
-			damage: 100,
-			accuracy: 90,
-			prority: 0,
-			description: "20% to raise user Evasion by 1."
 		},
 		'nightwind': {
 			name: "Night Wind",

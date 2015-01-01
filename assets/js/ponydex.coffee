@@ -107,7 +107,7 @@ class Ponydex
                     for type of sugg.data
                         continue if sugg.data[type].length < 1
                         ul.innerHTML += "<li><h3>#{type}</h3></li>"
-                        console.log sugg.data[type]
+                        #console.log sugg.data[type]
                         for elem in sugg.data[type]
                             ul.innerHTML += Ponydex.emitHTMLfor type, elem
                     what.innerHTML = ul.outerHTML
