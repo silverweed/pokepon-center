@@ -6,7 +6,9 @@ use warnings;
 
 my $file = $ARGV[0];
 my $type = $ARGV[1];
-my $nogif = $ARGV[2] eq "True" ? 1 : 0;
+# optional (only for ponies)
+my $num = $ARGV[2];
+my $nogif = $ARGV[3] eq "True" ? 1 : 0;
 
 open(STREAM, $file) or die('Cannot open file: ' . $file);
 
@@ -89,6 +91,7 @@ if($type eq 'pony') {
 	# emit JS code for a single pony
 	print 
 	"		'",lc($name =~ s/[\s']//gr),"': {
+			num: $num,
 			name: \"$name\",
 			typing: [ '",$type[0],(scalar @type > 1 ? "', '".$type[1] : ""), "' ],
 			race: '",lc($race),"',

@@ -24,7 +24,7 @@ class Ponydex
                 html = """
                     <li class="result">
                         <a href='#'>
-                            <img class="result-sprite" src="/assets/sprites/#{elem.img || elem.name.replace(///[\ ']///g, '') + "/stand_right.gif"}" alt="#{elem.name}"/>
+                            #{if elem.name[0] < 'G' then "<span class=\"result-sprite\" style='background: url(\"/assets/spritesheet.png\") scroll -#{elem.num * 32}px -1px transparent'></span>" else "<img class=\"result-sprite\" src=\"/assets/sprites/#{elem.img || elem.name.replace(///[\ ']///g, '') + "/stand_right.gif"}\" alt=\"#{elem.name}\"/>"}
                             <span class="result-name">#{elem.name}</span>
                             <span class="result-typing">#{emitTypingHTML elem.typing}</span>
                             <table class="result-stats">

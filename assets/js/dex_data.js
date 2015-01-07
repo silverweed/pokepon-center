@@ -1,6 +1,7 @@
 var dexData = {
 	ponies: {
 		'aloe': {
+			num: 0,
 			name: "Aloe",
 			typing: [ 'LOVE', 'LIGHT' ],
 			race: 'earthpony',
@@ -18,6 +19,7 @@ var dexData = {
 			abilities: [ 'shiningcoat' ]
 		},
 		'applebloom': {
+			num: 1,
 			name: "Apple Bloom",
 			typing: [ 'HONESTY', 'SPIRIT' ],
 			race: 'earthpony',
@@ -35,6 +37,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'applejack': {
+			num: 2,
 			name: "Applejack",
 			typing: [ 'HONESTY' ],
 			race: 'earthpony',
@@ -52,6 +55,7 @@ var dexData = {
 			abilities: [ 'integrity', 'simplicity' ]
 		},
 		'aryanne': {
+			num: 3,
 			name: "Aryanne",
 			typing: [ 'LOYALTY' ],
 			race: 'earthpony',
@@ -69,6 +73,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'babsseed': {
+			num: 4,
 			name: "Babs Seed",
 			typing: [ 'PASSION', 'SHADOW' ],
 			race: 'earthpony',
@@ -86,6 +91,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'berrypunch': {
+			num: 5,
 			name: "Berry Punch",
 			typing: [ 'NIGHT', 'LAUGHTER' ],
 			race: 'earthpony',
@@ -103,6 +109,7 @@ var dexData = {
 			abilities: [ 'simplicity', 'nocturnality', 'pestresilience' ]
 		},
 		'bigmacintosh': {
+			num: 6,
 			name: "BigMacintosh",
 			typing: [ 'HONESTY', 'LOYALTY' ],
 			race: 'earthpony',
@@ -120,6 +127,7 @@ var dexData = {
 			abilities: [ 'bruteforce', 'integrity', 'selfconfidence' ]
 		},
 		'bonbon': {
+			num: 7,
 			name: "Bon Bon",
 			typing: [ 'LOYALTY', 'SPIRIT' ],
 			race: 'earthpony',
@@ -137,6 +145,7 @@ var dexData = {
 			abilities: [ 'selfconfidence', 'hotheaded' ]
 		},
 		'braeburn': {
+			num: 8,
 			name: "Braeburn",
 			typing: [ 'HONESTY', 'GENEROSITY' ],
 			race: 'earthpony',
@@ -154,6 +163,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'bulkbiceps': {
+			num: 9,
 			name: "Bulk Biceps",
 			typing: [ 'PASSION', 'KINDNESS' ],
 			race: 'pegasus',
@@ -171,6 +181,7 @@ var dexData = {
 			abilities: [ 'compassion', 'toughbody' ]
 		},
 		'buttonmash': {
+			num: 10,
 			name: "Button Mash",
 			typing: [ 'PASSION' ],
 			race: 'earthpony',
@@ -188,6 +199,7 @@ var dexData = {
 			abilities: [ 'highscorer' ]
 		},
 		'buttonsmom': {
+			num: 11,
 			name: "Button's Mom",
 			typing: [ 'LOVE', 'KINDNESS' ],
 			race: 'earthpony',
@@ -205,6 +217,7 @@ var dexData = {
 			abilities: [ 'appeal' ]
 		},
 		'canni': {
+			num: 12,
 			name: "Canni",
 			typing: [ 'PASSION', 'LAUGHTER' ],
 			race: 'earthpony',
@@ -222,6 +235,7 @@ var dexData = {
 			abilities: [ 'spellrefractory' ]
 		},
 		'carrottop': {
+			num: 13,
 			name: "Carrot Top",
 			typing: [ 'MAGIC', 'GENEROSITY' ],
 			race: 'earthpony',
@@ -239,6 +253,7 @@ var dexData = {
 			abilities: [ 'ataraxy', 'pestresilience' ]
 		},
 		'cheerilee': {
+			num: 14,
 			name: "Cheerilee",
 			typing: [ 'LOVE', 'KINDNESS' ],
 			race: 'earthpony',
@@ -256,6 +271,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'cheesesandwich': {
+			num: 15,
 			name: "Cheese Sandwich",
 			typing: [ 'LAUGHTER', 'CHAOS' ],
 			race: 'earthpony',
@@ -273,6 +289,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'chiefthunderhooves': {
+			num: 16,
 			name: "Chief Thunderhooves",
 			typing: [ 'SPIRIT', 'LOYALTY' ],
 			race: 'ungulate',
@@ -290,6 +307,7 @@ var dexData = {
 			abilities: [ 'bruteforce', 'stubborn', 'ataraxy' ]
 		},
 		'chrysalis': {
+			num: 17,
 			name: "Chrysalis",
 			typing: [ 'SHADOW', 'LOVE' ],
 			race: 'mythicbeast',
@@ -307,6 +325,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'cocopommel': {
+			num: 18,
 			name: "Coco Pommel",
 			typing: [ 'KINDNESS' ],
 			race: 'earthpony',
@@ -324,6 +343,7 @@ var dexData = {
 			abilities: [ 'mildness' ]
 		},
 		'colgate': {
+			num: 19,
 			name: "Colgate",
 			typing: [ 'KINDNESS', 'MAGIC' ],
 			race: 'unicorn',
@@ -341,6 +361,7 @@ var dexData = {
 			abilities: [ 'ataraxy' ]
 		},
 		'daringdo': {
+			num: 20,
 			name: "Daring Do",
 			typing: [ 'LIGHT', 'PASSION' ],
 			race: 'pegasus',
@@ -358,6 +379,7 @@ var dexData = {
 			abilities: [ 'bruteforce', 'determination' ]
 		},
 		'derpyhooves': {
+			num: 21,
 			name: "Derpy Hooves",
 			typing: [ 'GENEROSITY', 'LAUGHTER' ],
 			race: 'pegasus',
@@ -375,6 +397,7 @@ var dexData = {
 			abilities: [ 'indifference', 'mildness' ]
 		},
 		'diamondtiara': {
+			num: 22,
 			name: "Diamond Tiara",
 			typing: [ 'LAUGHTER', 'SHADOW' ],
 			race: 'earthpony',
@@ -392,6 +415,7 @@ var dexData = {
 			abilities: [ 'subjection' ]
 		},
 		'discord': {
+			num: 23,
 			name: "Discord",
 			typing: [ 'CHAOS' ],
 			race: 'mythicbeast',
@@ -409,6 +433,7 @@ var dexData = {
 			abilities: [ 'chaosmagic' ]
 		},
 		'fancypants': {
+			num: 24,
 			name: "Fancypants",
 			typing: [ 'HONESTY', 'NIGHT' ],
 			race: 'unicorn',
@@ -426,6 +451,7 @@ var dexData = {
 			abilities: [ 'nocturnality' ]
 		},
 		'fiddlesticks': {
+			num: 25,
 			name: "Fiddlesticks",
 			typing: [ 'HONESTY', 'MUSIC' ],
 			race: 'earthpony',
@@ -443,6 +469,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'flam': {
+			num: 26,
 			name: "Flam",
 			typing: [ 'CHAOS', 'LAUGHTER' ],
 			race: 'unicorn',
@@ -460,6 +487,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'fleetfoot': {
+			num: 27,
 			name: "Fleetfoot",
 			typing: [ 'LOYALTY', 'LOVE' ],
 			race: 'pegasus',
@@ -477,6 +505,7 @@ var dexData = {
 			abilities: [ 'selfconfidence', 'lovebird' ]
 		},
 		'fleurdelis': {
+			num: 28,
 			name: "Fleur De Lis",
 			typing: [ 'GENEROSITY', 'LIGHT' ],
 			race: 'unicorn',
@@ -494,6 +523,7 @@ var dexData = {
 			abilities: [ 'shiningcoat', 'lovebird', 'appeal' ]
 		},
 		'flim': {
+			num: 29,
 			name: "Flim",
 			typing: [ 'CHAOS', 'PASSION' ],
 			race: 'unicorn',
@@ -511,6 +541,7 @@ var dexData = {
 			abilities: [ 'escapist' ]
 		},
 		'flufflepuff': {
+			num: 30,
 			name: "Fluffle Puff",
 			typing: [ 'LAUGHTER', 'LOVE' ],
 			race: 'earthpony',
@@ -528,6 +559,7 @@ var dexData = {
 			abilities: [ 'magicheal', 'spellrefractory' ]
 		},
 		'fluttershy': {
+			num: 31,
 			name: "Fluttershy",
 			typing: [ 'KINDNESS' ],
 			race: 'pegasus',
@@ -545,6 +577,7 @@ var dexData = {
 			abilities: [ 'compassion' ]
 		},
 		'gilda': {
+			num: 32,
 			name: "Gilda",
 			typing: [ 'SHADOW', 'LOYALTY' ],
 			race: 'gryphon',
@@ -562,6 +595,7 @@ var dexData = {
 			abilities: [ 'subjection', 'aversion' ]
 		},
 		'grannysmith': {
+			num: 33,
 			name: "Granny Smith",
 			typing: [ 'HONESTY' ],
 			race: 'earthpony',
@@ -579,6 +613,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'homage': {
+			num: 34,
 			name: "Homage",
 			typing: [ 'HONESTY', 'LOVE' ],
 			race: 'unicorn',
@@ -596,6 +631,7 @@ var dexData = {
 			abilities: [ 'integrity' ]
 		},
 		'ironwill': {
+			num: 35,
 			name: "Iron Will",
 			typing: [ 'PASSION', 'HONESTY' ],
 			race: 'mythicbeast',
@@ -613,6 +649,7 @@ var dexData = {
 			abilities: [ 'subjection', 'appeal' ]
 		},
 		'kingsombra': {
+			num: 36,
 			name: "King Sombra",
 			typing: [ 'SHADOW' ],
 			race: 'unicorn',
@@ -630,6 +667,7 @@ var dexData = {
 			abilities: [ 'subjection', 'spellrefractory' ]
 		},
 		'lightningdust': {
+			num: 37,
 			name: "Lightning Dust",
 			typing: [ 'PASSION' ],
 			race: 'pegasus',
@@ -647,6 +685,7 @@ var dexData = {
 			abilities: [ 'stubborn', 'determination' ]
 		},
 		'limestonepie': {
+			num: 38,
 			name: "Limestone Pie",
 			typing: [ 'SPIRIT', 'NIGHT' ],
 			race: 'earthpony',
@@ -664,6 +703,7 @@ var dexData = {
 			abilities: [ 'ataraxy' ]
 		},
 		'littlepip': {
+			num: 39,
 			name: "Littlepip",
 			typing: [ 'LIGHT', 'KINDNESS' ],
 			race: 'unicorn',
@@ -681,6 +721,7 @@ var dexData = {
 			abilities: [ 'leadership', 'diehard', 'toughbody' ]
 		},
 		'littlestrongheart': {
+			num: 40,
 			name: "Little Strongheart",
 			typing: [ 'SPIRIT', 'PASSION' ],
 			race: 'ungulate',
@@ -698,6 +739,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'lotus': {
+			num: 41,
 			name: "Lotus",
 			typing: [ 'GENEROSITY', 'LOVE' ],
 			race: 'earthpony',
@@ -715,6 +757,7 @@ var dexData = {
 			abilities: [ 'ataraxy' ]
 		},
 		'lyra': {
+			num: 42,
 			name: "Lyra",
 			typing: [ 'MUSIC', 'MAGIC' ],
 			race: 'unicorn',
@@ -732,6 +775,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'marblepie': {
+			num: 43,
 			name: "Marble Pie",
 			typing: [ 'KINDNESS', 'HONESTY' ],
 			race: 'earthpony',
@@ -749,6 +793,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'maudpie': {
+			num: 44,
 			name: "Maud Pie",
 			typing: [ 'HONESTY' ],
 			race: 'earthpony',
@@ -766,6 +811,7 @@ var dexData = {
 			abilities: [ 'indifference', 'senseofdanger', 'toughbody' ]
 		},
 		'milkyway': {
+			num: 45,
 			name: "Milky Way",
 			typing: [ 'GENEROSITY' ],
 			race: 'earthpony',
@@ -783,6 +829,7 @@ var dexData = {
 			abilities: [ 'appeal' ]
 		},
 		'msharshwhinny': {
+			num: 46,
 			name: "Ms Harshwhinny",
 			typing: [ 'LOYALTY' ],
 			race: 'earthpony',
@@ -800,6 +847,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'neonlights': {
+			num: 47,
 			name: "Neon Lights",
 			typing: [ 'MUSIC', 'NIGHT' ],
 			race: 'unicorn',
@@ -817,6 +865,7 @@ var dexData = {
 			abilities: [ 'nocturnality' ]
 		},
 		'nightmaremoon': {
+			num: 48,
 			name: "Nightmare Moon",
 			typing: [ 'NIGHT' ],
 			race: 'alicorn',
@@ -834,6 +883,7 @@ var dexData = {
 			abilities: [ 'subjection', 'nocturnality' ]
 		},
 		'nurseredheart': {
+			num: 49,
 			name: "Nurse Redheart",
 			typing: [ 'KINDNESS', 'GENEROSITY' ],
 			race: 'earthpony',
@@ -851,6 +901,7 @@ var dexData = {
 			abilities: [ 'magicheal' ]
 		},
 		'octavia': {
+			num: 50,
 			name: "Octavia",
 			typing: [ 'MUSIC' ],
 			race: 'earthpony',
@@ -868,6 +919,7 @@ var dexData = {
 			abilities: [ 'indifference' ]
 		},
 		'pinkiepie': {
+			num: 51,
 			name: "Pinkie Pie",
 			typing: [ 'LAUGHTER' ],
 			race: 'earthpony',
@@ -885,6 +937,7 @@ var dexData = {
 			abilities: [ 'optimism' ]
 		},
 		'pipsqueak': {
+			num: 52,
 			name: "Pipsqueak",
 			typing: [ 'NIGHT', 'GENEROSITY' ],
 			race: 'earthpony',
@@ -902,6 +955,7 @@ var dexData = {
 			abilities: [ 'stubborn', 'upperhoof' ]
 		},
 		'princesscadance': {
+			num: 53,
 			name: "Princess Cadance",
 			typing: [ 'LOVE' ],
 			race: 'alicorn',
@@ -919,6 +973,7 @@ var dexData = {
 			abilities: [ 'magicheal', 'optimism' ]
 		},
 		'princesscelestia': {
+			num: 54,
 			name: "Princess Celestia",
 			typing: [ 'MAGIC', 'LIGHT' ],
 			race: 'alicorn',
@@ -936,6 +991,7 @@ var dexData = {
 			abilities: [ 'solarmagic' ]
 		},
 		'princesserroria': {
+			num: 55,
 			name: "Princess Erroria",
 			typing: [ 'LOVE', 'CHAOS' ],
 			race: 'alicorn',
@@ -953,6 +1009,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'princessluna': {
+			num: 56,
 			name: "Princess Luna",
 			typing: [ 'MAGIC', 'NIGHT' ],
 			race: 'alicorn',
@@ -970,6 +1027,7 @@ var dexData = {
 			abilities: [ 'subjection', 'nocturnality' ]
 		},
 		'rainbowdash': {
+			num: 57,
 			name: "Rainbow Dash",
 			typing: [ 'LOYALTY' ],
 			race: 'pegasus',
@@ -987,6 +1045,7 @@ var dexData = {
 			abilities: [ 'devotion', 'determination' ]
 		},
 		'rarity': {
+			num: 58,
 			name: "Rarity",
 			typing: [ 'GENEROSITY' ],
 			race: 'unicorn',
@@ -1004,6 +1063,7 @@ var dexData = {
 			abilities: [ 'mastery', 'charity', 'shiningcoat' ]
 		},
 		'roxie': {
+			num: 59,
 			name: "Roxie",
 			typing: [ 'LOVE', 'SPIRIT' ],
 			race: 'earthpony',
@@ -1021,6 +1081,7 @@ var dexData = {
 			abilities: [ 'appeal' ]
 		},
 		'scootaloo': {
+			num: 60,
 			name: "Scootaloo",
 			typing: [ 'PASSION' ],
 			race: 'pegasus',
@@ -1038,6 +1099,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'screwball': {
+			num: 61,
 			name: "Screwball",
 			typing: [ 'CHAOS' ],
 			race: 'earthpony',
@@ -1055,6 +1117,7 @@ var dexData = {
 			abilities: [ 'escapist' ]
 		},
 		'screwloose': {
+			num: 62,
 			name: "Screw Loose",
 			typing: [ 'CHAOS' ],
 			race: 'earthpony',
@@ -1072,6 +1135,7 @@ var dexData = {
 			abilities: [ 'spellrefractory' ]
 		},
 		'seabreeze': {
+			num: 63,
 			name: "Sea Breeze",
 			typing: [ 'LOYALTY', 'LIGHT' ],
 			race: 'breezie',
@@ -1089,6 +1153,7 @@ var dexData = {
 			abilities: [ 'stubborn', 'devotion', 'swiftness' ]
 		},
 		'shiningarmor': {
+			num: 64,
 			name: "Shining Armor",
 			typing: [ 'LOVE', 'LOYALTY' ],
 			race: 'unicorn',
@@ -1106,6 +1171,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'silverspoon': {
+			num: 65,
 			name: "Silver Spoon",
 			typing: [ 'LOVE', 'SHADOW' ],
 			race: 'earthpony',
@@ -1123,6 +1189,7 @@ var dexData = {
 			abilities: [ 'lovebird' ]
 		},
 		'snails': {
+			num: 66,
 			name: "Snails",
 			typing: [ 'LOYALTY', 'SPIRIT' ],
 			race: 'unicorn',
@@ -1140,6 +1207,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'soarin': {
+			num: 67,
 			name: "Soarin",
 			typing: [ 'LOYALTY' ],
 			race: 'pegasus',
@@ -1157,6 +1225,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'spike': {
+			num: 68,
 			name: "Spike",
 			typing: [ 'LOYALTY', 'MAGIC' ],
 			race: 'mythicbeast',
@@ -1174,6 +1243,7 @@ var dexData = {
 			abilities: [ 'dragonscales', 'mildness', 'pestresilience' ]
 		},
 		'spitfire': {
+			num: 69,
 			name: "Spitfire",
 			typing: [ 'PASSION', 'LOYALTY' ],
 			race: 'pegasus',
@@ -1191,6 +1261,7 @@ var dexData = {
 			abilities: [ 'devotion' ]
 		},
 		'starswirl': {
+			num: 70,
 			name: "Starswirl",
 			typing: [ 'MAGIC' ],
 			race: 'unicorn',
@@ -1208,6 +1279,7 @@ var dexData = {
 			abilities: [ 'selfconfidence' ]
 		},
 		'sunsetshimmer': {
+			num: 71,
 			name: "Sunset Shimmer",
 			typing: [ 'LIGHT', 'SHADOW' ],
 			race: 'unicorn',
@@ -1225,6 +1297,7 @@ var dexData = {
 			abilities: [ 'shiningcoat', 'aversion' ]
 		},
 		'sweetiebelle': {
+			num: 72,
 			name: "Sweetie Belle",
 			typing: [ 'GENEROSITY', 'MUSIC' ],
 			race: 'unicorn',
@@ -1242,6 +1315,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'tirek': {
+			num: 73,
 			name: "Tirek",
 			typing: [ 'SHADOW', 'MAGIC' ],
 			race: 'mythicbeast',
@@ -1259,6 +1333,7 @@ var dexData = {
 			abilities: [ 'magicdrain' ]
 		},
 		'tracy': {
+			num: 74,
 			name: "Tracy",
 			typing: [ 'SHADOW' ],
 			race: 'earthpony',
@@ -1276,6 +1351,7 @@ var dexData = {
 			abilities: [ 'aversion' ]
 		},
 		'trenderhoof': {
+			num: 75,
 			name: "Trenderhoof",
 			typing: [ 'KINDNESS' ],
 			race: 'unicorn',
@@ -1293,6 +1369,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'trixie': {
+			num: 76,
 			name: "Trixie",
 			typing: [ 'MAGIC', 'PASSION' ],
 			race: 'unicorn',
@@ -1310,6 +1387,7 @@ var dexData = {
 			abilities: [ 'boasting' ]
 		},
 		'twilightsparkle': {
+			num: 77,
 			name: "Twilight Sparkle",
 			typing: [ 'MAGIC' ],
 			race: 'unicorn',
@@ -1327,6 +1405,7 @@ var dexData = {
 			abilities: [ 'leadership' ]
 		},
 		'vinylscratch': {
+			num: 78,
 			name: "Vinyl Scratch",
 			typing: [ 'MUSIC', 'CHAOS' ],
 			race: 'unicorn',
@@ -1344,6 +1423,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'wildfire': {
+			num: 79,
 			name: "Wildfire",
 			typing: [ 'HONESTY', 'PASSION' ],
 			race: 'pegasus',
@@ -1361,6 +1441,7 @@ var dexData = {
 			abilities: [ 'determination' ]
 		},
 		'xenith': {
+			num: 80,
 			name: "Xenith",
 			typing: [ 'SPIRIT', 'SHADOW' ],
 			race: 'zebra',
@@ -1378,6 +1459,7 @@ var dexData = {
 			abilities: [ 'bruteforce', 'diehard', 'pestresilience' ]
 		},
 		'zecora': {
+			num: 81,
 			name: "Zecora",
 			typing: [ 'SPIRIT' ],
 			race: 'zebra',

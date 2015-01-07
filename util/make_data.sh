@@ -18,9 +18,11 @@ isnogif() {
 echo "var dexData = {"
 echo -e "\tponies: {"
 ENTRY_FILES=$(ls $ROOT/pony/*.java | grep -v Pony.java)
+let n=0
 for FILE in $ENTRY_FILES; do
 	NOGIF=$(isnogif $FILE)
-	./make_data_entry.pl "$FILE" pony $NOGIF
+	./make_data_entry.pl "$FILE" pony $n $NOGIF
+	let n++
 done | head -n-1
 echo -e "\t\t}\n\t},"
 
