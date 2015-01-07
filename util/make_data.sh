@@ -7,11 +7,20 @@ fi
 
 ROOT=${1:-.}
 
+isnogif() {
+	if [[ $(grep -i $(basename ${1%\.java}) nogif.list) ]]; then
+		echo True
+	else
+		echo False
+	fi
+}
+
 echo "var dexData = {"
 echo -e "\tponies: {"
 ENTRY_FILES=$(ls $ROOT/pony/*.java | grep -v Pony.java)
 for FILE in $ENTRY_FILES; do
-	./make_data_entry.pl "$FILE" pony
+	NOGIF=$(isnogif $FILE)
+	./make_data_entry.pl "$FILE" pony $NOGIF
 done | head -n-1
 echo -e "\t\t}\n\t},"
 

@@ -5,6 +5,7 @@ var dexData = {
 			typing: [ 'LOVE', 'LIGHT' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Aloe/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 70,
@@ -21,6 +22,7 @@ var dexData = {
 			typing: [ 'HONESTY', 'SPIRIT' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'AppleBloom/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 60,
@@ -37,6 +39,7 @@ var dexData = {
 			typing: [ 'HONESTY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Applejack/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 100,
@@ -53,6 +56,7 @@ var dexData = {
 			typing: [ 'LOYALTY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Aryanne/stand_right.png',
 			stats: {
 				hp:  65,
 				atk: 122,
@@ -69,6 +73,7 @@ var dexData = {
 			typing: [ 'PASSION', 'SHADOW' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'BabsSeed/stand_right.gif',
 			stats: {
 				hp:  87,
 				atk: 100,
@@ -85,6 +90,7 @@ var dexData = {
 			typing: [ 'NIGHT', 'LAUGHTER' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'BerryPunch/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 86,
@@ -101,6 +107,7 @@ var dexData = {
 			typing: [ 'HONESTY', 'LOYALTY' ],
 			race: 'earthpony',
 			sex: 'M',
+			img: 'BigMacintosh/stand_right.gif',
 			stats: {
 				hp:  115,
 				atk: 80,
@@ -117,6 +124,7 @@ var dexData = {
 			typing: [ 'LOYALTY', 'SPIRIT' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'BonBon/stand_right.gif',
 			stats: {
 				hp:  70,
 				atk: 70,
@@ -133,6 +141,7 @@ var dexData = {
 			typing: [ 'HONESTY', 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'M',
+			img: 'Braeburn/stand_right.gif',
 			stats: {
 				hp:  75,
 				atk: 90,
@@ -149,6 +158,7 @@ var dexData = {
 			typing: [ 'PASSION', 'KINDNESS' ],
 			race: 'pegasus',
 			sex: 'M',
+			img: 'BulkBiceps/stand_right.gif',
 			stats: {
 				hp:  80,
 				atk: 170,
@@ -165,6 +175,7 @@ var dexData = {
 			typing: [ 'PASSION' ],
 			race: 'earthpony',
 			sex: 'M',
+			img: 'ButtonMash/stand_right.png',
 			stats: {
 				hp:  85,
 				atk: 60,
@@ -181,6 +192,7 @@ var dexData = {
 			typing: [ 'LOVE', 'KINDNESS' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'ButtonsMom/stand_right.png',
 			stats: {
 				hp:  135,
 				atk: 89,
@@ -197,6 +209,7 @@ var dexData = {
 			typing: [ 'PASSION', 'LAUGHTER' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Canni/stand_right.gif',
 			stats: {
 				hp:  110,
 				atk: 39,
@@ -213,6 +226,7 @@ var dexData = {
 			typing: [ 'MAGIC', 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'CarrotTop/stand_right.gif',
 			stats: {
 				hp:  57,
 				atk: 51,
@@ -229,6 +243,7 @@ var dexData = {
 			typing: [ 'LOVE', 'KINDNESS' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Cheerilee/stand_right.gif',
 			stats: {
 				hp:  95,
 				atk: 76,
@@ -245,6 +260,7 @@ var dexData = {
 			typing: [ 'LAUGHTER', 'CHAOS' ],
 			race: 'earthpony',
 			sex: 'M',
+			img: 'CheeseSandwich/stand_right.gif',
 			stats: {
 				hp:  61,
 				atk: 110,
@@ -261,6 +277,7 @@ var dexData = {
 			typing: [ 'SPIRIT', 'LOYALTY' ],
 			race: 'ungulate',
 			sex: 'M',
+			img: 'ChiefThunderhooves/stand_right.png',
 			stats: {
 				hp:  100,
 				atk: 70,
@@ -277,6 +294,7 @@ var dexData = {
 			typing: [ 'SHADOW', 'LOVE' ],
 			race: 'mythicbeast',
 			sex: 'F',
+			img: 'Chrysalis/stand_right.gif',
 			stats: {
 				hp:  105,
 				atk: 105,
@@ -293,6 +311,7 @@ var dexData = {
 			typing: [ 'KINDNESS' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'CocoPommel/stand_right.png',
 			stats: {
 				hp:  98,
 				atk: 50,
@@ -309,6 +328,7 @@ var dexData = {
 			typing: [ 'KINDNESS', 'MAGIC' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'Colgate/stand_right.gif',
 			stats: {
 				hp:  83,
 				atk: 60,
@@ -325,6 +345,7 @@ var dexData = {
 			typing: [ 'LIGHT', 'PASSION' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'DaringDo/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 150,
@@ -341,6 +362,7 @@ var dexData = {
 			typing: [ 'GENEROSITY', 'LAUGHTER' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'DerpyHooves/stand_right.gif',
 			stats: {
 				hp:  75,
 				atk: 95,
@@ -357,6 +379,7 @@ var dexData = {
 			typing: [ 'LAUGHTER', 'SHADOW' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'DiamondTiara/stand_right.gif',
 			stats: {
 				hp:  60,
 				atk: 65,
@@ -373,6 +396,7 @@ var dexData = {
 			typing: [ 'CHAOS' ],
 			race: 'mythicbeast',
 			sex: 'M',
+			img: 'Discord/stand_right.png',
 			stats: {
 				hp:  125,
 				atk: 105,
@@ -389,6 +413,7 @@ var dexData = {
 			typing: [ 'HONESTY', 'NIGHT' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'Fancypants/stand_right.gif',
 			stats: {
 				hp:  80,
 				atk: 65,
@@ -405,6 +430,7 @@ var dexData = {
 			typing: [ 'HONESTY', 'MUSIC' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Fiddlesticks/stand_right.gif',
 			stats: {
 				hp:  94,
 				atk: 70,
@@ -421,6 +447,7 @@ var dexData = {
 			typing: [ 'CHAOS', 'LAUGHTER' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'Flam/stand_right.gif',
 			stats: {
 				hp:  98,
 				atk: 60,
@@ -437,6 +464,7 @@ var dexData = {
 			typing: [ 'LOYALTY', 'LOVE' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'Fleetfoot/stand_right.gif',
 			stats: {
 				hp:  80,
 				atk: 50,
@@ -453,6 +481,7 @@ var dexData = {
 			typing: [ 'GENEROSITY', 'LIGHT' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'FleurDeLis/stand_right.gif',
 			stats: {
 				hp:  70,
 				atk: 50,
@@ -469,6 +498,7 @@ var dexData = {
 			typing: [ 'CHAOS', 'PASSION' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'Flim/stand_right.gif',
 			stats: {
 				hp:  75,
 				atk: 75,
@@ -485,6 +515,7 @@ var dexData = {
 			typing: [ 'LAUGHTER', 'LOVE' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'FlufflePuff/stand_right.gif',
 			stats: {
 				hp:  150,
 				atk: 70,
@@ -501,6 +532,7 @@ var dexData = {
 			typing: [ 'KINDNESS' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'Fluttershy/stand_right.gif',
 			stats: {
 				hp:  115,
 				atk: 65,
@@ -517,6 +549,7 @@ var dexData = {
 			typing: [ 'SHADOW', 'LOYALTY' ],
 			race: 'gryphon',
 			sex: 'F',
+			img: 'Gilda/stand_right.gif',
 			stats: {
 				hp:  71,
 				atk: 109,
@@ -533,6 +566,7 @@ var dexData = {
 			typing: [ 'HONESTY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'GrannySmith/stand_right.gif',
 			stats: {
 				hp:  100,
 				atk: 78,
@@ -549,6 +583,7 @@ var dexData = {
 			typing: [ 'HONESTY', 'LOVE' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'Homage/stand_right.png',
 			stats: {
 				hp:  90,
 				atk: 69,
@@ -565,6 +600,7 @@ var dexData = {
 			typing: [ 'PASSION', 'HONESTY' ],
 			race: 'mythicbeast',
 			sex: 'M',
+			img: 'IronWill/stand_right.gif',
 			stats: {
 				hp:  105,
 				atk: 160,
@@ -581,6 +617,7 @@ var dexData = {
 			typing: [ 'SHADOW' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'KingSombra/stand_right.gif',
 			stats: {
 				hp:  81,
 				atk: 150,
@@ -597,6 +634,7 @@ var dexData = {
 			typing: [ 'PASSION' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'LightningDust/stand_right.gif',
 			stats: {
 				hp:  64,
 				atk: 95,
@@ -613,6 +651,7 @@ var dexData = {
 			typing: [ 'SPIRIT', 'NIGHT' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'LimestonePie/stand_right.gif',
 			stats: {
 				hp:  109,
 				atk: 81,
@@ -624,27 +663,12 @@ var dexData = {
 			moves: [ 'rockthrow', 'rectify', 'hiddentalent', 'surprisehit', 'stealthdiamonds', 'relax', 'innerfocus', 'gemstorm', 'eeriesonata', 'boulderbomb', 'hopefulstrike', 'mirrorpond', 'practice', 'sneakattack', 'dodge' ],
 			abilities: [ 'ataraxy' ]
 		},
-		'littlestrongheart': {
-			name: "Little Strongheart",
-			typing: [ 'SPIRIT', 'PASSION' ],
-			race: 'ungulate',
-			sex: 'F',
-			stats: {
-				hp:  75,
-				atk: 90,
-				def: 70,
-				spa: 45,
-				spd: 65,
-				spe: 105
-			},
-			moves: [ 'tackle', 'hiddentalent', 'whirlinghoof', 'stalking', 'mirrorpond', 'hollerout', 'stampede', 'dodge', 'speedup', 'practice', 'hindkick' ],
-			abilities: [ '' ]
-		},
 		'littlepip': {
 			name: "Littlepip",
 			typing: [ 'LIGHT', 'KINDNESS' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'Littlepip/stand_right.gif',
 			stats: {
 				hp:  89,
 				atk: 85,
@@ -656,11 +680,29 @@ var dexData = {
 			moves: [ 'kineticstrike', 'rectify', 'heavymassage', 'hiddentalent', 'meditation', 'enlighten', 'balefire', 'stalking', 'mirrorpond', 'daredevilry', 'hopefulstrike', 'surprisehit', 'schemeup', 'sneakattack', 'dodge', 'tackle', 'magicblast', 'telekinesis', 'sharpnails', 'bulletshower' ],
 			abilities: [ 'leadership', 'diehard', 'toughbody' ]
 		},
+		'littlestrongheart': {
+			name: "Little Strongheart",
+			typing: [ 'SPIRIT', 'PASSION' ],
+			race: 'ungulate',
+			sex: 'F',
+			img: 'LittleStrongheart/stand_right.gif',
+			stats: {
+				hp:  75,
+				atk: 90,
+				def: 70,
+				spa: 45,
+				spd: 65,
+				spe: 105
+			},
+			moves: [ 'tackle', 'hiddentalent', 'whirlinghoof', 'stalking', 'mirrorpond', 'hollerout', 'stampede', 'dodge', 'speedup', 'practice', 'hindkick' ],
+			abilities: [ '' ]
+		},
 		'lotus': {
 			name: "Lotus",
 			typing: [ 'GENEROSITY', 'LOVE' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Lotus/stand_right.gif',
 			stats: {
 				hp:  60,
 				atk: 90,
@@ -677,6 +719,7 @@ var dexData = {
 			typing: [ 'MUSIC', 'MAGIC' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'Lyra/stand_right.gif',
 			stats: {
 				hp:  100,
 				atk: 50,
@@ -693,6 +736,7 @@ var dexData = {
 			typing: [ 'KINDNESS', 'HONESTY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'MarblePie/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 70,
@@ -709,6 +753,7 @@ var dexData = {
 			typing: [ 'HONESTY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'MaudPie/stand_right.png',
 			stats: {
 				hp:  90,
 				atk: 100,
@@ -725,6 +770,7 @@ var dexData = {
 			typing: [ 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'MilkyWay/stand_right.gif',
 			stats: {
 				hp:  100,
 				atk: 76,
@@ -741,6 +787,7 @@ var dexData = {
 			typing: [ 'LOYALTY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'MsHarshwhinny/stand_right.gif',
 			stats: {
 				hp:  100,
 				atk: 75,
@@ -757,6 +804,7 @@ var dexData = {
 			typing: [ 'MUSIC', 'NIGHT' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'NeonLights/stand_right.gif',
 			stats: {
 				hp:  65,
 				atk: 85,
@@ -773,6 +821,7 @@ var dexData = {
 			typing: [ 'NIGHT' ],
 			race: 'alicorn',
 			sex: 'F',
+			img: 'NightmareMoon/stand_right.gif',
 			stats: {
 				hp:  110,
 				atk: 90,
@@ -789,6 +838,7 @@ var dexData = {
 			typing: [ 'KINDNESS', 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'NurseRedheart/stand_right.gif',
 			stats: {
 				hp:  250,
 				atk: 55,
@@ -805,6 +855,7 @@ var dexData = {
 			typing: [ 'MUSIC' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Octavia/stand_right.gif',
 			stats: {
 				hp:  120,
 				atk: 79,
@@ -821,6 +872,7 @@ var dexData = {
 			typing: [ 'LAUGHTER' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'PinkiePie/stand_right.gif',
 			stats: {
 				hp:  80,
 				atk: 95,
@@ -837,6 +889,7 @@ var dexData = {
 			typing: [ 'NIGHT', 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'M',
+			img: 'Pipsqueak/stand_right.gif',
 			stats: {
 				hp:  60,
 				atk: 70,
@@ -853,6 +906,7 @@ var dexData = {
 			typing: [ 'LOVE' ],
 			race: 'alicorn',
 			sex: 'F',
+			img: 'PrincessCadance/stand_right.gif',
 			stats: {
 				hp:  130,
 				atk: 55,
@@ -869,6 +923,7 @@ var dexData = {
 			typing: [ 'MAGIC', 'LIGHT' ],
 			race: 'alicorn',
 			sex: 'F',
+			img: 'PrincessCelestia/stand_right.gif',
 			stats: {
 				hp:  120,
 				atk: 120,
@@ -885,6 +940,7 @@ var dexData = {
 			typing: [ 'LOVE', 'CHAOS' ],
 			race: 'alicorn',
 			sex: 'F',
+			img: 'PrincessErroria/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 65,
@@ -901,6 +957,7 @@ var dexData = {
 			typing: [ 'MAGIC', 'NIGHT' ],
 			race: 'alicorn',
 			sex: 'F',
+			img: 'PrincessLuna/stand_right.gif',
 			stats: {
 				hp:  65,
 				atk: 66,
@@ -917,6 +974,7 @@ var dexData = {
 			typing: [ 'LOYALTY' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'RainbowDash/stand_right.gif',
 			stats: {
 				hp:  82,
 				atk: 130,
@@ -933,6 +991,7 @@ var dexData = {
 			typing: [ 'GENEROSITY' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'Rarity/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 60,
@@ -949,6 +1008,7 @@ var dexData = {
 			typing: [ 'LOVE', 'SPIRIT' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Roxie/stand_right.png',
 			stats: {
 				hp:  60,
 				atk: 115,
@@ -965,6 +1025,7 @@ var dexData = {
 			typing: [ 'PASSION' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'Scootaloo/stand_right.gif',
 			stats: {
 				hp:  70,
 				atk: 110,
@@ -976,27 +1037,12 @@ var dexData = {
 			moves: [ 'tackle', 'drumbang', 'hiddentalent', 'stalking', 'mirrorpond', 'ragingspree', 'crazystunt', 'hollerout', 'practice', 'relayrace', 'dodge', 'speedup', 'duckface' ],
 			abilities: [ '' ]
 		},
-		'screwloose': {
-			name: "Screw Loose",
-			typing: [ 'CHAOS' ],
-			race: 'earthpony',
-			sex: 'F',
-			stats: {
-				hp:  90,
-				atk: 90,
-				def: 90,
-				spa: 60,
-				spd: 60,
-				spe: 60
-			},
-			moves: [ 'hiddentalent', 'gethype', 'mirrorpond', 'hollerout', 'surprisehit', 'wreakhavoc', 'dodge', 'joke', 'chaosburst' ],
-			abilities: [ 'spellrefractory' ]
-		},
 		'screwball': {
 			name: "Screwball",
 			typing: [ 'CHAOS' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Screwball/stand_right.gif',
 			stats: {
 				hp:  60,
 				atk: 60,
@@ -1008,11 +1054,29 @@ var dexData = {
 			moves: [ 'hiddentalent', 'sonicbarrier', 'entrench', 'mirrorpond', 'dimensiontwist', 'stampede', 'wreakhavoc', 'dodge', 'joke', 'chaosburst' ],
 			abilities: [ 'escapist' ]
 		},
+		'screwloose': {
+			name: "Screw Loose",
+			typing: [ 'CHAOS' ],
+			race: 'earthpony',
+			sex: 'F',
+			img: 'ScrewLoose/stand_right.gif',
+			stats: {
+				hp:  90,
+				atk: 90,
+				def: 90,
+				spa: 60,
+				spd: 60,
+				spe: 60
+			},
+			moves: [ 'hiddentalent', 'gethype', 'mirrorpond', 'hollerout', 'surprisehit', 'wreakhavoc', 'dodge', 'joke', 'chaosburst' ],
+			abilities: [ 'spellrefractory' ]
+		},
 		'seabreeze': {
 			name: "Sea Breeze",
 			typing: [ 'LOYALTY', 'LIGHT' ],
 			race: 'breezie',
 			sex: 'M',
+			img: 'SeaBreeze/stand_right.gif',
 			stats: {
 				hp:  35,
 				atk: 75,
@@ -1029,6 +1093,7 @@ var dexData = {
 			typing: [ 'LOVE', 'LOYALTY' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'ShiningArmor/stand_right.gif',
 			stats: {
 				hp:  75,
 				atk: 65,
@@ -1045,6 +1110,7 @@ var dexData = {
 			typing: [ 'LOVE', 'SHADOW' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'SilverSpoon/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 50,
@@ -1061,6 +1127,7 @@ var dexData = {
 			typing: [ 'LOYALTY', 'SPIRIT' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'Snails/stand_right.gif',
 			stats: {
 				hp:  64,
 				atk: 39,
@@ -1077,6 +1144,7 @@ var dexData = {
 			typing: [ 'LOYALTY' ],
 			race: 'pegasus',
 			sex: 'M',
+			img: 'Soarin/stand_right.gif',
 			stats: {
 				hp:  68,
 				atk: 88,
@@ -1093,6 +1161,7 @@ var dexData = {
 			typing: [ 'LOYALTY', 'MAGIC' ],
 			race: 'mythicbeast',
 			sex: 'M',
+			img: 'Spike/stand_right.gif',
 			stats: {
 				hp:  70,
 				atk: 65,
@@ -1109,6 +1178,7 @@ var dexData = {
 			typing: [ 'PASSION', 'LOYALTY' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'Spitfire/stand_right.gif',
 			stats: {
 				hp:  75,
 				atk: 125,
@@ -1125,6 +1195,7 @@ var dexData = {
 			typing: [ 'MAGIC' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'Starswirl/stand_right.png',
 			stats: {
 				hp:  100,
 				atk: 100,
@@ -1141,6 +1212,7 @@ var dexData = {
 			typing: [ 'LIGHT', 'SHADOW' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'SunsetShimmer/stand_right.gif',
 			stats: {
 				hp:  75,
 				atk: 60,
@@ -1157,6 +1229,7 @@ var dexData = {
 			typing: [ 'GENEROSITY', 'MUSIC' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'SweetieBelle/stand_right.gif',
 			stats: {
 				hp:  100,
 				atk: 62,
@@ -1173,6 +1246,7 @@ var dexData = {
 			typing: [ 'SHADOW', 'MAGIC' ],
 			race: 'mythicbeast',
 			sex: 'M',
+			img: 'Tirek/stand_right.png',
 			stats: {
 				hp:  90,
 				atk: 60,
@@ -1189,6 +1263,7 @@ var dexData = {
 			typing: [ 'SHADOW' ],
 			race: 'earthpony',
 			sex: 'F',
+			img: 'Tracy/stand_right.png',
 			stats: {
 				hp:  60,
 				atk: 95,
@@ -1205,6 +1280,7 @@ var dexData = {
 			typing: [ 'KINDNESS' ],
 			race: 'unicorn',
 			sex: 'M',
+			img: 'Trenderhoof/stand_right.png',
 			stats: {
 				hp:  120,
 				atk: 65,
@@ -1221,6 +1297,7 @@ var dexData = {
 			typing: [ 'MAGIC', 'PASSION' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'Trixie/stand_right.gif',
 			stats: {
 				hp:  90,
 				atk: 40,
@@ -1237,6 +1314,7 @@ var dexData = {
 			typing: [ 'MAGIC' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'TwilightSparkle/stand_right.gif',
 			stats: {
 				hp:  88,
 				atk: 55,
@@ -1253,6 +1331,7 @@ var dexData = {
 			typing: [ 'MUSIC', 'CHAOS' ],
 			race: 'unicorn',
 			sex: 'F',
+			img: 'VinylScratch/stand_right.gif',
 			stats: {
 				hp:  95,
 				atk: 45,
@@ -1269,6 +1348,7 @@ var dexData = {
 			typing: [ 'HONESTY', 'PASSION' ],
 			race: 'pegasus',
 			sex: 'F',
+			img: 'Wildfire/stand_right.gif',
 			stats: {
 				hp:  105,
 				atk: 95,
@@ -1285,6 +1365,7 @@ var dexData = {
 			typing: [ 'SPIRIT', 'SHADOW' ],
 			race: 'zebra',
 			sex: 'F',
+			img: 'Xenith/stand_right.png',
 			stats: {
 				hp:  75,
 				atk: 115,
@@ -1301,6 +1382,7 @@ var dexData = {
 			typing: [ 'SPIRIT' ],
 			race: 'zebra',
 			sex: 'F',
+			img: 'Zecora/stand_right.gif',
 			stats: {
 				hp:  80,
 				atk: 95,
@@ -1311,7 +1393,7 @@ var dexData = {
 			},
 			moves: [ 'drumbang', 'spatreatment', 'hiddentalent', 'wildweed', 'balefire', 'nap', 'mirrorpond', 'practice', 'burningpowder', 'poisonjoke', 'sneakattack', 'dodge', 'tackle', 'mysteriousbrew', 'martialarts', 'hindkick', 'venompotion' ],
 			abilities: [ 'ataraxy', 'spellrefractory' ]
-		},
+		}
 	},
 	moves: {
 		'applebuck': {
@@ -2393,7 +2475,7 @@ var dexData = {
 			accuracy: 85,
 			prority: 0,
 			description: "No additional effect."
-		},
+		}
 	},
 	abilities: {
 		'appeal': {
@@ -2543,7 +2625,7 @@ var dexData = {
 		'upperhoof': {
 			name: "Upper Hoof",
 			description: "Gives +1 priority to Status moves"
-		},
+		}
 	},
 	items: {
 		'alicornamulet': {
@@ -2605,6 +2687,6 @@ var dexData = {
 		'zapapplejuice': {
 			name: "Zap Apple Juice",
 			description: "Prevents user OHKO"
-		},
+		}
 	},
 }

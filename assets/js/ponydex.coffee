@@ -23,8 +23,8 @@ class Ponydex
                     bst += elem.stats[stat]
                 html = """
                     <li class="result">
-                        <!-- TODO: image -->
                         <a href='#'>
+                            <img class="result-sprite" src="/assets/sprites/#{elem.img || elem.name.replace(///[\ ']///g, '') + "/stand_right.gif"}" alt="#{elem.name}"/>
                             <span class="result-name">#{elem.name}</span>
                             <span class="result-typing">#{emitTypingHTML elem.typing}</span>
                             <table class="result-stats">

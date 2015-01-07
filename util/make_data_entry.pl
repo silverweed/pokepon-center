@@ -6,6 +6,7 @@ use warnings;
 
 my $file = $ARGV[0];
 my $type = $ARGV[1];
+my $nogif = $ARGV[2] eq "True" ? 1 : 0;
 
 open(STREAM, $file) or die('Cannot open file: ' . $file);
 
@@ -92,6 +93,7 @@ if($type eq 'pony') {
 			typing: [ '",$type[0],(scalar @type > 1 ? "', '".$type[1] : ""), "' ],
 			race: '",lc($race),"',
 			sex: '$sex',
+			img: '",($name =~ s/[\s']//gr),"/stand_right.",($nogif == 1 ? 'png' : 'gif'),"',
 			stats: {
 				hp:  $stats[0],
 				atk: $stats[1],
