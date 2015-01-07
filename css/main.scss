@@ -54,3 +54,27 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+
+table.servers {
+    padding: 8px;
+    border-collapse: collapse;
+    th {
+	text-align: left;
+	padding: 8px;
+    }
+    td {
+	width: 230px;
+	padding: 8px;
+    }
+    tr {
+	height: 40px;
+	&.odd {
+	    background-color: #DDEBE7;
+	}
+	/*&:first {
+	    border-top-left-radius: 3px;
+	    border-top-right-radius: 3px;
+	}*/
+    }
+}
