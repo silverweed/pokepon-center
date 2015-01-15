@@ -10,8 +10,11 @@ Be aware that the game is in early-release stage, so some bugs are to be expecte
 ### Packaged releases ###
 These will get you a Jar file containing the packaged game. 
 
-* [Latest Release](/downloads/pokepon.jar) (4 Jan 2015)
-* [Latest Release (server only)](/downloads/pokepon-server.jar) (30 Dec 2014)
+* [Latest Release](/downloads/pokepon.jar) (9 Jan 2015)
+* [Latest Release (server only)](/downloads/pokepon-server.jar) (9 Jan 2015)
+
+* [Previous Release](/downloads/pokepon.jar.old.1) (4 Jan 2015)
+* [Previous Release (server only)](/downloads/pokepon-server.jar.old.1) (30 Dec 2014)
 
 To play the game:  
 
