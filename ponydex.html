@@ -5,9 +5,24 @@ permalink: /dex/
 ---
 
 <p style="font-style: italic; color: #aaa">[Work-in-progress area]</p>
-<input type='text' class='dexbar' placeholder='Insert pony, item, move or ability' />
-<div class='dexresults'></div>
+<div id='dexbar-container' style="display: block; width: 100%; margin: auto; padding: 10px; text-align: center; float: left">
+    <input type='text' class='dexbar' placeholder='Insert pony, item, move or ability' style="width: 70%; margin: auto" />
+    <div id='dexresults' style='width: 70%; text-align: left; margin: auto'></div>
+</div>
+<div id='dexpanel' style="border: 1px solid red; display: block; opacity: 0; float: left; padding-left: 10px; overflow: hidden; width: auto; display: none"></div>
 
-<script src='/assets/js/hacks.js'></script>
+<script src='/assets/js/velocity.js'></script>
+<script src='/assets/js/utils.js'></script>
 <script src='/assets/js/dex_data.js'></script>
 <script src='/assets/js/ponydex.js'></script>
+<script>
+    var results = document.getElementById('dexresults')
+
+    var dex = new Ponydex(results, 'dexpanel')
+
+    Array.prototype.slice.call(document.querySelectorAll('.dexbar')).map(function (e) {
+        e.onkeyup = function (key) {
+            dex.suggest(e.value)
+        }
+    })
+</script>

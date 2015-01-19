@@ -1296,8 +1296,26 @@ var dexData = {
 			moves: [ 'magicblast', 'darkmagic', 'charge', 'nightwind', 'hiddentalent', 'mirrorpond', 'teleportblast', 'dodge', 'scorchingbeam', 'glowinglaser' ],
 			abilities: [ 'shiningcoat', 'aversion' ]
 		},
-		'sweetiebelle': {
+		'surprise': {
 			num: 72,
+			name: "Surprise",
+			typing: [ 'LOYALTY', 'LAUGHTER' ],
+			race: 'pegasus',
+			sex: 'F',
+			img: 'Surprise/stand_right.gif',
+			stats: {
+				hp:  90,
+				atk: 78,
+				def: 44,
+				spa: 78,
+				spd: 49,
+				spe: 131
+			},
+			moves: [ 'tackle', 'snuggle', 'relayrace', 'hollerout', 'gethype', 'chatter', 'bubbleburst', 'hiddentalent', 'trailblazer', 'mirrorpond', 'practice', 'dodge', 'speedup', 'skydive' ],
+			abilities: [ '' ]
+		},
+		'sweetiebelle': {
+			num: 73,
 			name: "Sweetie Belle",
 			typing: [ 'GENEROSITY', 'MUSIC' ],
 			race: 'unicorn',
@@ -1315,7 +1333,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'tirek': {
-			num: 73,
+			num: 74,
 			name: "Tirek",
 			typing: [ 'SHADOW', 'MAGIC' ],
 			race: 'mythicbeast',
@@ -1333,7 +1351,7 @@ var dexData = {
 			abilities: [ 'magicdrain' ]
 		},
 		'tracy': {
-			num: 74,
+			num: 75,
 			name: "Tracy",
 			typing: [ 'SHADOW' ],
 			race: 'earthpony',
@@ -1351,7 +1369,7 @@ var dexData = {
 			abilities: [ 'aversion' ]
 		},
 		'trenderhoof': {
-			num: 75,
+			num: 76,
 			name: "Trenderhoof",
 			typing: [ 'KINDNESS' ],
 			race: 'unicorn',
@@ -1369,7 +1387,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'trixie': {
-			num: 76,
+			num: 77,
 			name: "Trixie",
 			typing: [ 'MAGIC', 'PASSION' ],
 			race: 'unicorn',
@@ -1387,7 +1405,7 @@ var dexData = {
 			abilities: [ 'boasting' ]
 		},
 		'twilightsparkle': {
-			num: 77,
+			num: 78,
 			name: "Twilight Sparkle",
 			typing: [ 'MAGIC' ],
 			race: 'unicorn',
@@ -1405,7 +1423,7 @@ var dexData = {
 			abilities: [ 'leadership' ]
 		},
 		'vinylscratch': {
-			num: 78,
+			num: 79,
 			name: "Vinyl Scratch",
 			typing: [ 'MUSIC', 'CHAOS' ],
 			race: 'unicorn',
@@ -1423,7 +1441,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'wildfire': {
-			num: 79,
+			num: 80,
 			name: "Wildfire",
 			typing: [ 'HONESTY', 'PASSION' ],
 			race: 'pegasus',
@@ -1441,7 +1459,7 @@ var dexData = {
 			abilities: [ 'determination' ]
 		},
 		'xenith': {
-			num: 80,
+			num: 81,
 			name: "Xenith",
 			typing: [ 'SPIRIT', 'SHADOW' ],
 			race: 'zebra',
@@ -1459,7 +1477,7 @@ var dexData = {
 			abilities: [ 'bruteforce', 'diehard', 'pestresilience' ]
 		},
 		'zecora': {
-			num: 81,
+			num: 82,
 			name: "Zecora",
 			typing: [ 'SPIRIT' ],
 			race: 'zebra',
