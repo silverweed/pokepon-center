@@ -63,8 +63,8 @@ class Ponydex
 					    <a href='#dexpanel' class='dexentry' data-type='moves' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{panelId}")'>
 						<span class="result-name">#{elem.name}</span>
 						<span class="result-typing">
-						<span class="type type-#{elem.type.toLowerCase()}">#{elem.type}</span>
-						<span class="type movetype-#{elem.movetype.toLowerCase()}">#{elem.movetype}</span>
+					            <span class="type type-#{elem.type.toLowerCase()}">#{elem.type}</span>
+						    <span class="type movetype-#{elem.movetype.toLowerCase()}">#{elem.movetype}</span>
 						</span>
 						<table class="result-move">
 						<tr>
@@ -139,11 +139,84 @@ class Ponydex
 			        <dt>Types:</dt>
 				<dd>#{@emitTypingHTML elem.typing}</dd>
 			        <dt>Abilities:</dt>
-				#{("<dd>#{t[0]?.toUpperCase() + t[1..]}</dd>" for t in elem.abilities).join ""}
+				<dd>#{(dexData.abilities[t]?.name for t in elem.abilities).join " | "}</dd>
+				<dt></dt>
+			    	<dd>
+				    <table>
+				        <tr>
+					    <th colspan="3" style="text-align: left">Base stats:</th>
+					    <th>min-</th>
+					    <th>min</th>
+					    <th>max</th>
+					    <th>max+</th>
+					</tr>
+					#{(@emitStatCode elem.stats, stat for stat of elem.stats).join ""}
+				    </table>
+				</dd>
+				<dt>Moves</dt>
+				<dd>
+				    <ul>
+					#{@emitMovesCode elem.moves, panelId}
+			            </ul>
+				</dd>
 			    </dl>
 			</div>
 		"""
 		return panel
 
+	@emitStatCode: (stats, stat) ->
+		opts = do () ->
+			n = stats[stat]
+			MAX_LEN = 200
+			return {
+				width: Math.min(MAX_LEN, n)
+				color: Math.floor n * 180 / 255
+			}
+		min_ = Math.floor (2 * stats[stat] + 5) * 0.9
+		min = Math.floor 2 * stats[stat] + 5
+		max = Math.floor ((31 + 2 * stats[stat] + 252 / 4) * 100) / 100 + 5
+		maxp = Math.floor (((31 + 2 * stats[stat] + 252 / 4) * 100) / 100 + 5) * 1.1
+		html = """
+			<tr>
+			    <th class='statname'>#{Utils.capitalize stat}:</th>
+			    <th class='statvalue'>#{stats[stat]}</th>
+			    <td class='statbar'><span style="width: #{opts.width}px; background-color: hsl(#{opts.color},75%,35%)"></span></td>
+			    <td class='statminmax'>#{min_}</td>
+			    <td class='statminmax'>#{min}</td>
+			    <td class='statminmax'>#{max}</td>
+			    <td class='statminmax'>#{maxp}</td>
+			</tr>
+		"""
+		return html
+	
+	@emitMovesCode: (movelist, panelId) ->
+		html = ""
+		conv = (x) -> if x <= 0 then return '-' else return x
+		for key in movelist
+			elem = dexData.moves[key]
+			html += """
+				<li class="result">
+				    <a href='#dexpanel' class='dexentry' data-type='moves' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{panelId}")'>
+					<span class="result-name">#{elem.name}</span>
+					<span class="result-typing">
+					    <span class="type type-#{elem.type.toLowerCase()}">#{elem.type}</span>
+					    <span class="type movetype-#{elem.movetype.toLowerCase()}">#{elem.movetype}</span>
+					</span>
+					<table class="result-move">
+					<tr>
+					    <th>Power</th>
+					    <th>Accur.</th>
+					    <th>PP</th>
+					</tr>
+					<tr>
+					    <td>#{conv elem.damage}</td>
+					    <td>#{conv elem.accuracy}</td>
+					    <td>#{conv elem.pp}</td>
+					</tr>
+					</table>
+					<span class="result-desc">#{elem.description.replace ///<br.?>///g, ' '}</span>
+				    </a>
+				</li>"""
+		return html
 		
 window.Ponydex = Ponydex

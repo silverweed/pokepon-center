@@ -107,6 +107,32 @@ img {
 	}
 }
 
+dt {
+	font-weight: bold;
+}
+th {
+	&.statname {
+		font-weight: normal;
+		text-align: left;
+	}
+	&.statvalue {
+		text-align: right;
+	}
+}
+td {
+	& span {
+		border-radius: 2px;
+		box-shadow: 1px 4px 0 rgba(255, 255, 255, 0.4) inset, -1px -1px 0 rgba(0, 0, 0, 0.3) inset;
+		display: block;
+		height: 12px;
+		margin: 1px 0 0;
+	}
+	&.statminmax {
+		font-size: 80%;
+		text-align: center;
+	}
+}
+
 // Types colors
 .type-chaos {
 color: #522900;
