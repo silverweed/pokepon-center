@@ -3,6 +3,7 @@
 ###
 	Ponydex
 	Reads data from dex_data.js and prettifies them
+	@author Silverweed
 ###
 
 class Ponydex
@@ -40,7 +41,6 @@ class Ponydex
 		key = Utils.getKeyOf dexData[type], elem
 		switch type
 			when 'ponies'
-
 				bst = 0
 				for stat of elem.stats
 					bst += elem.stats[stat]
