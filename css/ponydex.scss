@@ -21,6 +21,8 @@ li {
 			display: block;
 			text-decoration: none;
 			padding: 0 15px;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 	}
 	list-style-type: none;
@@ -76,9 +78,7 @@ span {
 	&.result-desc {
 		color: #555;
 		font-size: 70%;
-		overflow: hidden;
-		display: inline-block;
-		max-width: 350px;
+		max-width: 250px;
 	}
 	&.type {
 		display: inline-block;
@@ -104,6 +104,32 @@ img {
 		display: inline-block;
 		width: 30px;
 		height: 30px;
+	}
+}
+
+dt {
+	font-weight: bold;
+}
+th {
+	&.statname {
+		font-weight: normal;
+		text-align: left;
+	}
+	&.statvalue {
+		text-align: right;
+	}
+}
+td {
+	& span {
+		border-radius: 2px;
+		box-shadow: 1px 4px 0 rgba(255, 255, 255, 0.4) inset, -1px -1px 0 rgba(0, 0, 0, 0.3) inset;
+		display: block;
+		height: 12px;
+		margin: 1px 0 0;
+	}
+	&.statminmax {
+		font-size: 80%;
+		text-align: center;
 	}
 }
 

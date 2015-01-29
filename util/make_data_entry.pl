@@ -93,7 +93,7 @@ if($type eq 'pony') {
 	"		'",lc($name =~ s/[\s']//gr),"': {
 			num: $num,
 			name: \"$name\",
-			typing: [ '",$type[0],(scalar @type > 1 ? "', '".$type[1] : ""), "' ],
+			type: [ '",$type[0],(scalar @type > 1 ? "', '".$type[1] : ""), "' ],
 			race: '",lc($race),"',
 			sex: '$sex',
 			img: '",($name =~ s/[\s']//gr),"/stand_right.",($nogif == 1 ? 'png' : 'gif'),"',
