@@ -9,20 +9,20 @@ permalink: /dex/
     <input type='text' class='dexbar' placeholder='Insert pony, item, move or ability' style="width: 70%; margin: auto" />
     <div id='dexresults' style='width: 70%; text-align: left; margin: auto'></div>
 </div>
-<div id='dexpanel' style="border: 1px solid red; display: block; opacity: 0; float: left; padding: 10px; overflow: hidden; width: auto; display: none"></div>
+<div id='dexpanel' style="border: 0px solid red; max-width: 50%; opacity: 0; float: left; padding: 10px; overflow: hidden; width: auto; display: none"></div>
 
 <script src='/assets/js/velocity.js'></script>
 <script src='/assets/js/utils.js'></script>
 <script src='/assets/js/dex_data.js'></script>
 <script src='/assets/js/ponydex.js'></script>
 <script>
-    var results = document.getElementById('dexresults')
+    var results = document.getElementById('dexresults');
 
-    var dex = new Ponydex(results, 'dexpanel')
+    var dex = new Ponydex(results, 'dexpanel');
 
     Array.prototype.slice.call(document.querySelectorAll('.dexbar')).map(function (e) {
         e.onkeyup = function (key) {
             dex.suggest(e.value)
-        }
-    })
+        };
+    });
 </script>

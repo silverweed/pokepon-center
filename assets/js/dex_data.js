@@ -3,7 +3,7 @@ var dexData = {
 		'aloe': {
 			num: 0,
 			name: "Aloe",
-			typing: [ 'LOVE', 'LIGHT' ],
+			type: [ 'LOVE', 'LIGHT' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Aloe/stand_right.gif',
@@ -21,7 +21,7 @@ var dexData = {
 		'applebloom': {
 			num: 1,
 			name: "Apple Bloom",
-			typing: [ 'HONESTY', 'SPIRIT' ],
+			type: [ 'HONESTY', 'SPIRIT' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'AppleBloom/stand_right.gif',
@@ -39,7 +39,7 @@ var dexData = {
 		'applejack': {
 			num: 2,
 			name: "Applejack",
-			typing: [ 'HONESTY' ],
+			type: [ 'HONESTY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Applejack/stand_right.gif',
@@ -57,7 +57,7 @@ var dexData = {
 		'aryanne': {
 			num: 3,
 			name: "Aryanne",
-			typing: [ 'LOYALTY' ],
+			type: [ 'LOYALTY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Aryanne/stand_right.png',
@@ -75,7 +75,7 @@ var dexData = {
 		'babsseed': {
 			num: 4,
 			name: "Babs Seed",
-			typing: [ 'PASSION', 'SHADOW' ],
+			type: [ 'PASSION', 'SHADOW' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'BabsSeed/stand_right.gif',
@@ -93,7 +93,7 @@ var dexData = {
 		'berrypunch': {
 			num: 5,
 			name: "Berry Punch",
-			typing: [ 'NIGHT', 'LAUGHTER' ],
+			type: [ 'NIGHT', 'LAUGHTER' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'BerryPunch/stand_right.gif',
@@ -111,7 +111,7 @@ var dexData = {
 		'bigmacintosh': {
 			num: 6,
 			name: "BigMacintosh",
-			typing: [ 'HONESTY', 'LOYALTY' ],
+			type: [ 'HONESTY', 'LOYALTY' ],
 			race: 'earthpony',
 			sex: 'M',
 			img: 'BigMacintosh/stand_right.gif',
@@ -129,7 +129,7 @@ var dexData = {
 		'bonbon': {
 			num: 7,
 			name: "Bon Bon",
-			typing: [ 'LOYALTY', 'SPIRIT' ],
+			type: [ 'LOYALTY', 'SPIRIT' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'BonBon/stand_right.gif',
@@ -147,7 +147,7 @@ var dexData = {
 		'braeburn': {
 			num: 8,
 			name: "Braeburn",
-			typing: [ 'HONESTY', 'GENEROSITY' ],
+			type: [ 'HONESTY', 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'M',
 			img: 'Braeburn/stand_right.gif',
@@ -165,7 +165,7 @@ var dexData = {
 		'bulkbiceps': {
 			num: 9,
 			name: "Bulk Biceps",
-			typing: [ 'PASSION', 'KINDNESS' ],
+			type: [ 'PASSION', 'KINDNESS' ],
 			race: 'pegasus',
 			sex: 'M',
 			img: 'BulkBiceps/stand_right.gif',
@@ -183,7 +183,7 @@ var dexData = {
 		'buttonmash': {
 			num: 10,
 			name: "Button Mash",
-			typing: [ 'PASSION' ],
+			type: [ 'PASSION' ],
 			race: 'earthpony',
 			sex: 'M',
 			img: 'ButtonMash/stand_right.png',
@@ -201,7 +201,7 @@ var dexData = {
 		'buttonsmom': {
 			num: 11,
 			name: "Button's Mom",
-			typing: [ 'LOVE', 'KINDNESS' ],
+			type: [ 'LOVE', 'KINDNESS' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'ButtonsMom/stand_right.png',
@@ -219,7 +219,7 @@ var dexData = {
 		'canni': {
 			num: 12,
 			name: "Canni",
-			typing: [ 'PASSION', 'LAUGHTER' ],
+			type: [ 'PASSION', 'LAUGHTER' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Canni/stand_right.gif',
@@ -237,7 +237,7 @@ var dexData = {
 		'carrottop': {
 			num: 13,
 			name: "Carrot Top",
-			typing: [ 'MAGIC', 'GENEROSITY' ],
+			type: [ 'MAGIC', 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'CarrotTop/stand_right.gif',
@@ -255,7 +255,7 @@ var dexData = {
 		'cheerilee': {
 			num: 14,
 			name: "Cheerilee",
-			typing: [ 'LOVE', 'KINDNESS' ],
+			type: [ 'LOVE', 'KINDNESS' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Cheerilee/stand_right.gif',
@@ -273,7 +273,7 @@ var dexData = {
 		'cheesesandwich': {
 			num: 15,
 			name: "Cheese Sandwich",
-			typing: [ 'LAUGHTER', 'CHAOS' ],
+			type: [ 'LAUGHTER', 'CHAOS' ],
 			race: 'earthpony',
 			sex: 'M',
 			img: 'CheeseSandwich/stand_right.gif',
@@ -291,7 +291,7 @@ var dexData = {
 		'chiefthunderhooves': {
 			num: 16,
 			name: "Chief Thunderhooves",
-			typing: [ 'SPIRIT', 'LOYALTY' ],
+			type: [ 'SPIRIT', 'LOYALTY' ],
 			race: 'ungulate',
 			sex: 'M',
 			img: 'ChiefThunderhooves/stand_right.png',
@@ -309,7 +309,7 @@ var dexData = {
 		'chrysalis': {
 			num: 17,
 			name: "Chrysalis",
-			typing: [ 'SHADOW', 'LOVE' ],
+			type: [ 'SHADOW', 'LOVE' ],
 			race: 'mythicbeast',
 			sex: 'F',
 			img: 'Chrysalis/stand_right.gif',
@@ -327,7 +327,7 @@ var dexData = {
 		'cocopommel': {
 			num: 18,
 			name: "Coco Pommel",
-			typing: [ 'KINDNESS' ],
+			type: [ 'KINDNESS' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'CocoPommel/stand_right.png',
@@ -345,7 +345,7 @@ var dexData = {
 		'colgate': {
 			num: 19,
 			name: "Colgate",
-			typing: [ 'KINDNESS', 'MAGIC' ],
+			type: [ 'KINDNESS', 'MAGIC' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'Colgate/stand_right.gif',
@@ -363,7 +363,7 @@ var dexData = {
 		'daringdo': {
 			num: 20,
 			name: "Daring Do",
-			typing: [ 'LIGHT', 'PASSION' ],
+			type: [ 'LIGHT', 'PASSION' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'DaringDo/stand_right.gif',
@@ -381,7 +381,7 @@ var dexData = {
 		'derpyhooves': {
 			num: 21,
 			name: "Derpy Hooves",
-			typing: [ 'GENEROSITY', 'LAUGHTER' ],
+			type: [ 'GENEROSITY', 'LAUGHTER' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'DerpyHooves/stand_right.gif',
@@ -399,7 +399,7 @@ var dexData = {
 		'diamondtiara': {
 			num: 22,
 			name: "Diamond Tiara",
-			typing: [ 'LAUGHTER', 'SHADOW' ],
+			type: [ 'LAUGHTER', 'SHADOW' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'DiamondTiara/stand_right.gif',
@@ -417,7 +417,7 @@ var dexData = {
 		'discord': {
 			num: 23,
 			name: "Discord",
-			typing: [ 'CHAOS' ],
+			type: [ 'CHAOS' ],
 			race: 'mythicbeast',
 			sex: 'M',
 			img: 'Discord/stand_right.png',
@@ -435,7 +435,7 @@ var dexData = {
 		'fancypants': {
 			num: 24,
 			name: "Fancypants",
-			typing: [ 'HONESTY', 'NIGHT' ],
+			type: [ 'HONESTY', 'NIGHT' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'Fancypants/stand_right.gif',
@@ -453,7 +453,7 @@ var dexData = {
 		'fiddlesticks': {
 			num: 25,
 			name: "Fiddlesticks",
-			typing: [ 'HONESTY', 'MUSIC' ],
+			type: [ 'HONESTY', 'MUSIC' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Fiddlesticks/stand_right.gif',
@@ -471,7 +471,7 @@ var dexData = {
 		'flam': {
 			num: 26,
 			name: "Flam",
-			typing: [ 'CHAOS', 'LAUGHTER' ],
+			type: [ 'CHAOS', 'LAUGHTER' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'Flam/stand_right.gif',
@@ -489,7 +489,7 @@ var dexData = {
 		'fleetfoot': {
 			num: 27,
 			name: "Fleetfoot",
-			typing: [ 'LOYALTY', 'LOVE' ],
+			type: [ 'LOYALTY', 'LOVE' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'Fleetfoot/stand_right.gif',
@@ -507,7 +507,7 @@ var dexData = {
 		'fleurdelis': {
 			num: 28,
 			name: "Fleur De Lis",
-			typing: [ 'GENEROSITY', 'LIGHT' ],
+			type: [ 'GENEROSITY', 'LIGHT' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'FleurDeLis/stand_right.gif',
@@ -525,7 +525,7 @@ var dexData = {
 		'flim': {
 			num: 29,
 			name: "Flim",
-			typing: [ 'CHAOS', 'PASSION' ],
+			type: [ 'CHAOS', 'PASSION' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'Flim/stand_right.gif',
@@ -543,7 +543,7 @@ var dexData = {
 		'flufflepuff': {
 			num: 30,
 			name: "Fluffle Puff",
-			typing: [ 'LAUGHTER', 'LOVE' ],
+			type: [ 'LAUGHTER', 'LOVE' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'FlufflePuff/stand_right.gif',
@@ -561,7 +561,7 @@ var dexData = {
 		'fluttershy': {
 			num: 31,
 			name: "Fluttershy",
-			typing: [ 'KINDNESS' ],
+			type: [ 'KINDNESS' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'Fluttershy/stand_right.gif',
@@ -579,7 +579,7 @@ var dexData = {
 		'gilda': {
 			num: 32,
 			name: "Gilda",
-			typing: [ 'SHADOW', 'LOYALTY' ],
+			type: [ 'SHADOW', 'LOYALTY' ],
 			race: 'gryphon',
 			sex: 'F',
 			img: 'Gilda/stand_right.gif',
@@ -597,7 +597,7 @@ var dexData = {
 		'grannysmith': {
 			num: 33,
 			name: "Granny Smith",
-			typing: [ 'HONESTY' ],
+			type: [ 'HONESTY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'GrannySmith/stand_right.gif',
@@ -615,7 +615,7 @@ var dexData = {
 		'homage': {
 			num: 34,
 			name: "Homage",
-			typing: [ 'HONESTY', 'LOVE' ],
+			type: [ 'HONESTY', 'LOVE' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'Homage/stand_right.png',
@@ -633,7 +633,7 @@ var dexData = {
 		'ironwill': {
 			num: 35,
 			name: "Iron Will",
-			typing: [ 'PASSION', 'HONESTY' ],
+			type: [ 'PASSION', 'HONESTY' ],
 			race: 'mythicbeast',
 			sex: 'M',
 			img: 'IronWill/stand_right.gif',
@@ -651,7 +651,7 @@ var dexData = {
 		'kingsombra': {
 			num: 36,
 			name: "King Sombra",
-			typing: [ 'SHADOW' ],
+			type: [ 'SHADOW' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'KingSombra/stand_right.gif',
@@ -669,7 +669,7 @@ var dexData = {
 		'lightningdust': {
 			num: 37,
 			name: "Lightning Dust",
-			typing: [ 'PASSION' ],
+			type: [ 'PASSION' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'LightningDust/stand_right.gif',
@@ -687,7 +687,7 @@ var dexData = {
 		'limestonepie': {
 			num: 38,
 			name: "Limestone Pie",
-			typing: [ 'SPIRIT', 'NIGHT' ],
+			type: [ 'SPIRIT', 'NIGHT' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'LimestonePie/stand_right.gif',
@@ -705,7 +705,7 @@ var dexData = {
 		'littlepip': {
 			num: 39,
 			name: "Littlepip",
-			typing: [ 'LIGHT', 'KINDNESS' ],
+			type: [ 'LIGHT', 'KINDNESS' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'Littlepip/stand_right.gif',
@@ -723,7 +723,7 @@ var dexData = {
 		'littlestrongheart': {
 			num: 40,
 			name: "Little Strongheart",
-			typing: [ 'SPIRIT', 'PASSION' ],
+			type: [ 'SPIRIT', 'PASSION' ],
 			race: 'ungulate',
 			sex: 'F',
 			img: 'LittleStrongheart/stand_right.gif',
@@ -741,7 +741,7 @@ var dexData = {
 		'lotus': {
 			num: 41,
 			name: "Lotus",
-			typing: [ 'GENEROSITY', 'LOVE' ],
+			type: [ 'GENEROSITY', 'LOVE' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Lotus/stand_right.gif',
@@ -759,7 +759,7 @@ var dexData = {
 		'lyra': {
 			num: 42,
 			name: "Lyra",
-			typing: [ 'MUSIC', 'MAGIC' ],
+			type: [ 'MUSIC', 'MAGIC' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'Lyra/stand_right.gif',
@@ -777,7 +777,7 @@ var dexData = {
 		'marblepie': {
 			num: 43,
 			name: "Marble Pie",
-			typing: [ 'KINDNESS', 'HONESTY' ],
+			type: [ 'KINDNESS', 'HONESTY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'MarblePie/stand_right.gif',
@@ -795,7 +795,7 @@ var dexData = {
 		'maudpie': {
 			num: 44,
 			name: "Maud Pie",
-			typing: [ 'HONESTY' ],
+			type: [ 'HONESTY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'MaudPie/stand_right.png',
@@ -813,7 +813,7 @@ var dexData = {
 		'milkyway': {
 			num: 45,
 			name: "Milky Way",
-			typing: [ 'GENEROSITY' ],
+			type: [ 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'MilkyWay/stand_right.gif',
@@ -831,7 +831,7 @@ var dexData = {
 		'msharshwhinny': {
 			num: 46,
 			name: "Ms Harshwhinny",
-			typing: [ 'LOYALTY' ],
+			type: [ 'LOYALTY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'MsHarshwhinny/stand_right.gif',
@@ -849,7 +849,7 @@ var dexData = {
 		'neonlights': {
 			num: 47,
 			name: "Neon Lights",
-			typing: [ 'MUSIC', 'NIGHT' ],
+			type: [ 'MUSIC', 'NIGHT' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'NeonLights/stand_right.gif',
@@ -867,7 +867,7 @@ var dexData = {
 		'nightmaremoon': {
 			num: 48,
 			name: "Nightmare Moon",
-			typing: [ 'NIGHT' ],
+			type: [ 'NIGHT' ],
 			race: 'alicorn',
 			sex: 'F',
 			img: 'NightmareMoon/stand_right.gif',
@@ -885,7 +885,7 @@ var dexData = {
 		'nurseredheart': {
 			num: 49,
 			name: "Nurse Redheart",
-			typing: [ 'KINDNESS', 'GENEROSITY' ],
+			type: [ 'KINDNESS', 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'NurseRedheart/stand_right.gif',
@@ -903,7 +903,7 @@ var dexData = {
 		'octavia': {
 			num: 50,
 			name: "Octavia",
-			typing: [ 'MUSIC' ],
+			type: [ 'MUSIC' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Octavia/stand_right.gif',
@@ -921,7 +921,7 @@ var dexData = {
 		'pinkiepie': {
 			num: 51,
 			name: "Pinkie Pie",
-			typing: [ 'LAUGHTER' ],
+			type: [ 'LAUGHTER' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'PinkiePie/stand_right.gif',
@@ -939,7 +939,7 @@ var dexData = {
 		'pipsqueak': {
 			num: 52,
 			name: "Pipsqueak",
-			typing: [ 'NIGHT', 'GENEROSITY' ],
+			type: [ 'NIGHT', 'GENEROSITY' ],
 			race: 'earthpony',
 			sex: 'M',
 			img: 'Pipsqueak/stand_right.gif',
@@ -957,7 +957,7 @@ var dexData = {
 		'princesscadance': {
 			num: 53,
 			name: "Princess Cadance",
-			typing: [ 'LOVE' ],
+			type: [ 'LOVE' ],
 			race: 'alicorn',
 			sex: 'F',
 			img: 'PrincessCadance/stand_right.gif',
@@ -975,7 +975,7 @@ var dexData = {
 		'princesscelestia': {
 			num: 54,
 			name: "Princess Celestia",
-			typing: [ 'MAGIC', 'LIGHT' ],
+			type: [ 'MAGIC', 'LIGHT' ],
 			race: 'alicorn',
 			sex: 'F',
 			img: 'PrincessCelestia/stand_right.gif',
@@ -993,7 +993,7 @@ var dexData = {
 		'princesserroria': {
 			num: 55,
 			name: "Princess Erroria",
-			typing: [ 'LOVE', 'CHAOS' ],
+			type: [ 'LOVE', 'CHAOS' ],
 			race: 'alicorn',
 			sex: 'F',
 			img: 'PrincessErroria/stand_right.gif',
@@ -1011,7 +1011,7 @@ var dexData = {
 		'princessluna': {
 			num: 56,
 			name: "Princess Luna",
-			typing: [ 'MAGIC', 'NIGHT' ],
+			type: [ 'MAGIC', 'NIGHT' ],
 			race: 'alicorn',
 			sex: 'F',
 			img: 'PrincessLuna/stand_right.gif',
@@ -1029,7 +1029,7 @@ var dexData = {
 		'rainbowdash': {
 			num: 57,
 			name: "Rainbow Dash",
-			typing: [ 'LOYALTY' ],
+			type: [ 'LOYALTY' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'RainbowDash/stand_right.gif',
@@ -1047,7 +1047,7 @@ var dexData = {
 		'rarity': {
 			num: 58,
 			name: "Rarity",
-			typing: [ 'GENEROSITY' ],
+			type: [ 'GENEROSITY' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'Rarity/stand_right.gif',
@@ -1065,7 +1065,7 @@ var dexData = {
 		'roxie': {
 			num: 59,
 			name: "Roxie",
-			typing: [ 'LOVE', 'SPIRIT' ],
+			type: [ 'LOVE', 'SPIRIT' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Roxie/stand_right.png',
@@ -1083,7 +1083,7 @@ var dexData = {
 		'scootaloo': {
 			num: 60,
 			name: "Scootaloo",
-			typing: [ 'PASSION' ],
+			type: [ 'PASSION' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'Scootaloo/stand_right.gif',
@@ -1101,7 +1101,7 @@ var dexData = {
 		'screwball': {
 			num: 61,
 			name: "Screwball",
-			typing: [ 'CHAOS' ],
+			type: [ 'CHAOS' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Screwball/stand_right.gif',
@@ -1119,7 +1119,7 @@ var dexData = {
 		'screwloose': {
 			num: 62,
 			name: "Screw Loose",
-			typing: [ 'CHAOS' ],
+			type: [ 'CHAOS' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'ScrewLoose/stand_right.gif',
@@ -1137,7 +1137,7 @@ var dexData = {
 		'seabreeze': {
 			num: 63,
 			name: "Sea Breeze",
-			typing: [ 'LOYALTY', 'LIGHT' ],
+			type: [ 'LOYALTY', 'LIGHT' ],
 			race: 'breezie',
 			sex: 'M',
 			img: 'SeaBreeze/stand_right.gif',
@@ -1155,7 +1155,7 @@ var dexData = {
 		'shiningarmor': {
 			num: 64,
 			name: "Shining Armor",
-			typing: [ 'LOVE', 'LOYALTY' ],
+			type: [ 'LOVE', 'LOYALTY' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'ShiningArmor/stand_right.gif',
@@ -1173,7 +1173,7 @@ var dexData = {
 		'silverspoon': {
 			num: 65,
 			name: "Silver Spoon",
-			typing: [ 'LOVE', 'SHADOW' ],
+			type: [ 'LOVE', 'SHADOW' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'SilverSpoon/stand_right.gif',
@@ -1191,7 +1191,7 @@ var dexData = {
 		'snails': {
 			num: 66,
 			name: "Snails",
-			typing: [ 'LOYALTY', 'SPIRIT' ],
+			type: [ 'LOYALTY', 'SPIRIT' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'Snails/stand_right.gif',
@@ -1209,7 +1209,7 @@ var dexData = {
 		'soarin': {
 			num: 67,
 			name: "Soarin",
-			typing: [ 'LOYALTY' ],
+			type: [ 'LOYALTY' ],
 			race: 'pegasus',
 			sex: 'M',
 			img: 'Soarin/stand_right.gif',
@@ -1227,7 +1227,7 @@ var dexData = {
 		'spike': {
 			num: 68,
 			name: "Spike",
-			typing: [ 'LOYALTY', 'MAGIC' ],
+			type: [ 'LOYALTY', 'MAGIC' ],
 			race: 'mythicbeast',
 			sex: 'M',
 			img: 'Spike/stand_right.gif',
@@ -1245,7 +1245,7 @@ var dexData = {
 		'spitfire': {
 			num: 69,
 			name: "Spitfire",
-			typing: [ 'PASSION', 'LOYALTY' ],
+			type: [ 'PASSION', 'LOYALTY' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'Spitfire/stand_right.gif',
@@ -1263,7 +1263,7 @@ var dexData = {
 		'starswirl': {
 			num: 70,
 			name: "Starswirl",
-			typing: [ 'MAGIC' ],
+			type: [ 'MAGIC' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'Starswirl/stand_right.png',
@@ -1281,7 +1281,7 @@ var dexData = {
 		'sunsetshimmer': {
 			num: 71,
 			name: "Sunset Shimmer",
-			typing: [ 'LIGHT', 'SHADOW' ],
+			type: [ 'LIGHT', 'SHADOW' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'SunsetShimmer/stand_right.gif',
@@ -1299,7 +1299,7 @@ var dexData = {
 		'surprise': {
 			num: 72,
 			name: "Surprise",
-			typing: [ 'LOYALTY', 'LAUGHTER' ],
+			type: [ 'LOYALTY', 'LAUGHTER' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'Surprise/stand_right.gif',
@@ -1317,7 +1317,7 @@ var dexData = {
 		'sweetiebelle': {
 			num: 73,
 			name: "Sweetie Belle",
-			typing: [ 'GENEROSITY', 'MUSIC' ],
+			type: [ 'GENEROSITY', 'MUSIC' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'SweetieBelle/stand_right.gif',
@@ -1335,7 +1335,7 @@ var dexData = {
 		'tirek': {
 			num: 74,
 			name: "Tirek",
-			typing: [ 'SHADOW', 'MAGIC' ],
+			type: [ 'SHADOW', 'MAGIC' ],
 			race: 'mythicbeast',
 			sex: 'M',
 			img: 'Tirek/stand_right.png',
@@ -1353,7 +1353,7 @@ var dexData = {
 		'tracy': {
 			num: 75,
 			name: "Tracy",
-			typing: [ 'SHADOW' ],
+			type: [ 'SHADOW' ],
 			race: 'earthpony',
 			sex: 'F',
 			img: 'Tracy/stand_right.png',
@@ -1371,7 +1371,7 @@ var dexData = {
 		'trenderhoof': {
 			num: 76,
 			name: "Trenderhoof",
-			typing: [ 'KINDNESS' ],
+			type: [ 'KINDNESS' ],
 			race: 'unicorn',
 			sex: 'M',
 			img: 'Trenderhoof/stand_right.png',
@@ -1389,7 +1389,7 @@ var dexData = {
 		'trixie': {
 			num: 77,
 			name: "Trixie",
-			typing: [ 'MAGIC', 'PASSION' ],
+			type: [ 'MAGIC', 'PASSION' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'Trixie/stand_right.gif',
@@ -1407,7 +1407,7 @@ var dexData = {
 		'twilightsparkle': {
 			num: 78,
 			name: "Twilight Sparkle",
-			typing: [ 'MAGIC' ],
+			type: [ 'MAGIC' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'TwilightSparkle/stand_right.gif',
@@ -1425,7 +1425,7 @@ var dexData = {
 		'vinylscratch': {
 			num: 79,
 			name: "Vinyl Scratch",
-			typing: [ 'MUSIC', 'CHAOS' ],
+			type: [ 'MUSIC', 'CHAOS' ],
 			race: 'unicorn',
 			sex: 'F',
 			img: 'VinylScratch/stand_right.gif',
@@ -1443,7 +1443,7 @@ var dexData = {
 		'wildfire': {
 			num: 80,
 			name: "Wildfire",
-			typing: [ 'HONESTY', 'PASSION' ],
+			type: [ 'HONESTY', 'PASSION' ],
 			race: 'pegasus',
 			sex: 'F',
 			img: 'Wildfire/stand_right.gif',
@@ -1461,7 +1461,7 @@ var dexData = {
 		'xenith': {
 			num: 81,
 			name: "Xenith",
-			typing: [ 'SPIRIT', 'SHADOW' ],
+			type: [ 'SPIRIT', 'SHADOW' ],
 			race: 'zebra',
 			sex: 'F',
 			img: 'Xenith/stand_right.png',
@@ -1479,7 +1479,7 @@ var dexData = {
 		'zecora': {
 			num: 82,
 			name: "Zecora",
-			typing: [ 'SPIRIT' ],
+			type: [ 'SPIRIT' ],
 			race: 'zebra',
 			sex: 'F',
 			img: 'Zecora/stand_right.gif',

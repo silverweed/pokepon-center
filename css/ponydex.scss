@@ -21,6 +21,8 @@ li {
 			display: block;
 			text-decoration: none;
 			padding: 0 15px;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 	}
 	list-style-type: none;
@@ -76,9 +78,7 @@ span {
 	&.result-desc {
 		color: #555;
 		font-size: 70%;
-		overflow: hidden;
-		display: inline-block;
-		max-width: 350px;
+		max-width: 250px;
 	}
 	&.type {
 		display: inline-block;
