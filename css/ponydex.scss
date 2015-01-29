@@ -110,6 +110,11 @@ img {
 dt {
 	font-weight: bold;
 }
+dd {
+	&.dd-desc {
+		color: #555;
+	}
+}
 th {
 	&.statname {
 		font-weight: normal;

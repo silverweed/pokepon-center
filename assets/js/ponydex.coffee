@@ -162,6 +162,12 @@ class Ponydex
 					<h3>#{elem.name}</h3>
 					<div>
 					    <dl>
+						<dt>Damage:</dt>
+						<dd class='dd-desc'>#{elem.damage}</dd>
+						<dt>Accuracy:</dt>
+						<dd class='dd-desc'>#{elem.accuracy}</dd>
+						<dt>Description:</dt>
+						<dd class='dd-desc'>#{elem.description}</dd>
 						<dt>Type:</dt>
 						<dd>
 						    <span class="type type-#{elem.type.toLowerCase()}">#{elem.type}</span>
