@@ -17,9 +17,7 @@ permalink: /dex/
 <script src='/assets/js/dex_data.js'></script>
 <script src='/assets/js/ponydex.js'></script>
 <script>
-    var results = document.getElementById('dexresults');
-
-    var dex = new Ponydex(results, 'dexpanel');
+    var dex = new Ponydex();
 
     Array.prototype.slice.call(document.querySelectorAll('.dexbar')).map(function (e) {
         e.onkeyup = function (key) {

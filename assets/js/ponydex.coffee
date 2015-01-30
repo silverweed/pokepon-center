@@ -2,22 +2,40 @@
 ---
 ###
 	Ponydex
-	Reads data from dex_data.js and prettifies them
+	Lists and shows detailed info about ponies, moves, abilities and items.
 	@author Silverweed
 ###
 
 class Ponydex
-	constructor: (@results, @panelId) ->
-		@data = dexData || {}
-	
-	dump: () ->
-		console.log @data
+	###
+	* You can edit these to change the Ponydex behaviour.
+	* Beware: resultsId must be changed before creating the Ponydex,
+	* or you'll have to manually reassign dex.results to the new <ul>.
+	###
+	@defaults:
+		# the dexbar wrapper div
+		containerId: 'dexbar-container'
+		# the div containing the results ul
+		resultsId: 'dexresults'
+		# the div wherein detailed info are shown
+		panelId: 'dexpanel'
+
+	###
+	* Allowed opts:
+	*    data (default: dexData)
+	###
+	constructor: (opts) ->
+		# the dex data
+		@data = opts?.data || dexData
+		@results = document.getElementById Ponydex.defaults.resultsId
+
+	dump: () -> console.log @data
 
 	# fills @results with the dex data matching `str' by creating a <ul> and appending it to @results.
 	suggest: (str) ->
 		@results.innerHTML = ""
 		if str.length < 1
-			@hidePanel()
+			Ponydex.hidePanel()
 		else
 			ul = document.createElement 'ul'
 			@results.appendChild ul
@@ -26,11 +44,21 @@ class Ponydex
 				for elem of @data[type]
 					if elem.startsWith str.replace(///\s+///g, "").toLowerCase()
 						unless headerSet[type]?
-							ul.innerHTML += "<li><h3>#{type}</h3></li>"
+							ul.innerHTML += "<li class='result-header'><a href='#' onclick='Ponydex.showAll(\"#{type}\")'><h3>#{type}</h3></a></li>"
 							headerSet[type] = true
-						ul.innerHTML += Ponydex.emitHTMLfor type, @data[type][elem], @panelId
+						ul.innerHTML += Ponydex.emitHTMLfor type, @data[type][elem]
 		return
-
+	
+	@showAll: (type) ->
+		panel = document.getElementById @defaults.panelId
+		panel.innerHTML = ""
+		ul = document.createElement 'ul'
+		panel.appendChild ul
+		ul.innerHTML += "<li class='result-header'><a href='#' onclick='Ponydex.showAll(\"#{type}\")'><h3>#{type}</h3></a></li>"
+		for e of dexData[type]
+			ul.innerHTML += Ponydex.emitHTMLfor type, dexData[type][e]
+		@showPanel()
+			
 	@emitTypingHTML: (typing) ->
 		if typing instanceof Array
 			return (Array.prototype.slice.call(typing).map (type) ->
@@ -38,7 +66,7 @@ class Ponydex
 				).join " "
 		return ""
 
-	@emitHTMLfor: (type, elem, panelId) ->
+	@emitHTMLfor: (type, elem) ->
 		html = ''
 		key = Utils.getKeyOf dexData[type], elem
 		switch type
@@ -49,7 +77,7 @@ class Ponydex
 				sprite = "<span class=\"result-sprite\" style='background: url(\"/assets/spritesheet.png\") scroll -#{(elem.num % 16) * 32}px -#{Math.floor(elem.num / 16) * 32}px transparent'></span>"
 				html = """
 					<li class="result">
-					    <a href='#' class='dexentry' data-type='ponies' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{panelId}", "#{type}")'>
+					    <a href='#' class='dexentry' data-type='ponies' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{type}")'>
 						#{sprite}
 						<span class="result-name">#{elem.name}</span>
 						<span class="result-typing">#{@emitTypingHTML elem.type}</span>
@@ -80,7 +108,7 @@ class Ponydex
 				conv = (x) -> if x <= 0 then return '-' else return x
 				return """
 					<li class="result">
-					    <a href='#' class='dexentry' data-type='moves' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{panelId}", "#{type}")'>
+					    <a href='#' class='dexentry' data-type='moves' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{type}")'>
 						<span class="result-name">#{elem.name}</span>
 						<span class="result-typing">
 					            <span class="type type-#{elem.type.toLowerCase()}">#{elem.type}</span>
@@ -104,33 +132,28 @@ class Ponydex
 			else
 				return """
 					<li class="result">
-					    <a href='#' class='dexentry' data-type='#{type}' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{panelId}", "#{type}")'>
+					    <a href='#' class='dexentry' data-type='#{type}' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{type}")'>
 						<span class="result-name">#{elem.name}</span>
 						<span class="result-desc">#{elem.description.replace ///<br.?>///g, ' '}</span>
 					    </a>
 					</li>"""
 	
-	hidePanel: (panelId) ->
-		panel = document.getElementById (panelId || @panelId)
+	@hidePanel: () ->
+		container = document.getElementById @defaults.containerId
+		panel = document.getElementById @defaults.panelId
 		Velocity(panel, {
 			opacity: "0"
 		}, duration: 100)
 		.then (e) ->
 			panel.style.display = "none"
-			Velocity document.getElementById('dexbar-container'), {
+			Velocity container, {
 				width: "100%"
 			}, { duration: 200 }
 
-
-	@createPanel: (htmlElem, panelId, kind) ->
-		data = htmlElem.dataset
-		panel = document.getElementById panelId
-		return unless data? and data.type? and data.key? and panel?
-		elem = dexData[data.type][data.key]
-		unless elem
-			console.log "Error: data[#{data.type}][#{data.key}] not found."
-			return
-		Velocity(document.getElementById('dexbar-container'), {
+	@showPanel: () ->
+		container = document.getElementById @defaults.containerId
+		panel = document.getElementById @defaults.panelId
+		Velocity(container, {
 			width: "40%"
 		})
 		.then (e) ->
@@ -138,13 +161,25 @@ class Ponydex
 			Velocity panel, {
 				opacity: "1"
 			}
+
+	@createPanel: (htmlElem, kind) ->
+		data = htmlElem.dataset
+		panel = document.getElementById @defaults.panelId
+		return unless data? and data.type? and data.key? and panel?
+		elem = dexData[data.type][data.key]
+		unless elem
+			console.log "Error: data[#{data.type}][#{data.key}] not found."
+			return
+
+		@showPanel()
+
 		switch kind
 			when 'ponies'
 				abi = "<em>No ability yet</em>"
 				if elem.abilities[0].length > 0
 					abi = []
 					for a in elem.abilities
-						abi.push "<a href='#' data-type='abilities' data-key='#{a}' onclick='Ponydex.createPanel(this, \"#{panelId}\", \"abilities\")'>#{dexData.abilities[a]?.name}</a>"
+						abi.push "<a href='#' data-type='abilities' data-key='#{a}' onclick='Ponydex.createPanel(this, \"abilities\")'>#{dexData.abilities[a]?.name}</a>"
 					abi = abi.join " | "
 
 				panel.innerHTML = """
@@ -172,7 +207,7 @@ class Ponydex
 						<dt>Moves</dt>
 						<dd>
 						    <ul>
-							#{(@emitHTMLfor "moves", dexData.moves[move], panelId for move in elem.moves).join ""}
+							#{(@emitHTMLfor "moves", dexData.moves[move] for move in elem.moves).join ""}
 						    </ul>
 						</dd>
 					    </dl>
@@ -199,7 +234,7 @@ class Ponydex
 						<dt>Ponies</dt>
 						<dd>
 						    <ul>
-						        #{(@emitHTMLfor "ponies", pony, panelId for pony in @poniesWhichCanLearn data.key).join ""}
+						        #{(@emitHTMLfor "ponies", pony for pony in @poniesWhichCanLearn data.key).join ""}
 						    </ul>
 						</dd>
 					    </dl>
@@ -216,7 +251,7 @@ class Ponydex
 						<dt>Ponies</dt>
 						<dd>
 						    <ul>
-						        #{(@emitHTMLfor "ponies", pony, panelId for pony in @poniesWithAbility data.key).join ""}
+						        #{(@emitHTMLfor "ponies", pony for pony in @poniesWithAbility data.key).join ""}
 						    </ul>
 						</dd>
 					    </dl>
