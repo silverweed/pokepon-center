@@ -9,7 +9,14 @@ input.dexbar {
 		outline: 0 none;
 	}
 }
-
+.dextitle {
+	text-align: center;
+	padding: 20;
+	font-size: 3em;
+	color: #000088;
+	opacity: 0.8;
+	font-weight: bold;
+}
 li {
 	border: 0.5px ridge transparent;
 	&.result {
