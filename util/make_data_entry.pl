@@ -52,7 +52,7 @@ foreach $line (<STREAM>) {
 			push(@abilities, $1);
 		}
 	} elsif($type eq 'move') {
-		if($line =~ /super\(\"([A-Za-z\s']+)\"\)/) {
+		if($line =~ /super\(\"([A-Za-z\s'\-]+)\"\)/) {
 			$name = $1;
 
 		} elsif($line =~ /type = Type\.([A-Z]+)/) {
@@ -90,13 +90,13 @@ close(STREAM);
 if($type eq 'pony') {
 	# emit JS code for a single pony
 	print 
-	"		'",lc($name =~ s/[\s']//gr),"': {
+	"		'",lc($name =~ s/[\s'\-]//gr),"': {
 			num: $num,
 			name: \"$name\",
 			type: [ '",$type[0],(scalar @type > 1 ? "', '".$type[1] : ""), "' ],
 			race: '",lc($race),"',
 			sex: '$sex',
-			img: '",($name =~ s/[\s']//gr),"/stand_right.",($nogif == 1 ? 'png' : 'gif'),"',
+			img: '",($name =~ s/[\s'\-]//gr),"/stand_right.",($nogif == 1 ? 'png' : 'gif'),"',
 			stats: {
 				hp:  $stats[0],
 				atk: $stats[1],
@@ -108,19 +108,19 @@ if($type eq 'pony') {
 			moves: [ ";
 	my $i;
 	for ($i = 0; $i < scalar @moves - 1; ++$i) {
-		print "'",lc($moves[$i] =~ s/[\s']//gr),"', ";
+		print "'",lc($moves[$i] =~ s/[\s'\-]//gr),"', ";
 	}
-	print "'",lc($moves[$i] =~ s/[\s']//gr),"' ],
+	print "'",lc($moves[$i] =~ s/[\s'\-]//gr),"' ],
 			abilities: [ ";
 
 	for ($i = 0; $i < scalar @abilities - 1; ++$i) {
 		print "'",lc($abilities[$i] =~ s/[\s']//gr),"', ";
 	}
-	print "'",lc($abilities[$i] =~ s/[\s']//gr),"' ]
+	print "'",lc($abilities[$i] =~ s/[\s'\-]//gr),"' ]
 		},\n";
 } elsif($type eq 'move') {
 	print
-	"		'",lc($name =~ s/[\s']//gr),"': {
+	"		'",lc($name =~ s/[\s'\-]//gr),"': {
 			name: \"$name\",
 			type: '$type[0]',
 			movetype: '$movetype',
@@ -132,7 +132,7 @@ if($type eq 'pony') {
 		},\n";
 } elsif($type eq 'item' or $type eq 'ability') {
 	print
-	"		'",lc($name =~ s/[\s']//gr),"': {
+	"		'",lc($name =~ s/[\s'\-]//gr),"': {
 			name: \"$name\",
 			description: \"$desc\"
 		},\n";

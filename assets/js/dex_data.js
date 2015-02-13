@@ -33,7 +33,7 @@ var dexData = {
 				spd: 85,
 				spe: 90
 			},
-			moves: [ 'tackle', 'one-twohit', 'hiddentalent', 'gethype', 'repeat', 'stalking', 'mirrorpond', 'practice', 'hopefulstrike', 'poisonjoke', 'dodge', 'martialarts' ],
+			moves: [ 'tackle', 'onetwohit', 'hiddentalent', 'gethype', 'repeat', 'stalking', 'mirrorpond', 'practice', 'hopefulstrike', 'poisonjoke', 'dodge', 'martialarts' ],
 			abilities: [ '' ]
 		},
 		'applejack': {
@@ -69,7 +69,7 @@ var dexData = {
 				spd: 65,
 				spe: 55
 			},
-			moves: [ 'one-twohit', 'hiddentalent', 'charge', 'surprisehit', 'stalking', 'schemeup', 'scareaway', 'ragingspree', 'powerdisplay', 'mirrorpond', 'innerfocus', 'hindkick', 'entrench', 'bully', 'bindup' ],
+			moves: [ 'onetwohit', 'hiddentalent', 'charge', 'surprisehit', 'stalking', 'schemeup', 'scareaway', 'ragingspree', 'powerdisplay', 'mirrorpond', 'innerfocus', 'hindkick', 'entrench', 'bully', 'bindup' ],
 			abilities: [ '' ]
 		},
 		'babsseed': {
@@ -177,7 +177,7 @@ var dexData = {
 				spd: 55,
 				spe: 60
 			},
-			moves: [ 'charge', 'one-twohit', 'heavymassage', 'hiddentalent', 'mirrorpond', 'ragingspree', 'hollerout', 'practice', 'relayrace', 'dodge', 'hindkick', 'innerfocus' ],
+			moves: [ 'charge', 'onetwohit', 'heavymassage', 'hiddentalent', 'mirrorpond', 'ragingspree', 'hollerout', 'practice', 'relayrace', 'dodge', 'hindkick', 'innerfocus' ],
 			abilities: [ 'compassion', 'toughbody' ]
 		},
 		'buttonmash': {
@@ -375,7 +375,7 @@ var dexData = {
 				spd: 74,
 				spe: 60
 			},
-			moves: [ 'hindkick', 'one-twohit', 'hopefulstrike', 'rectify', 'hiddentalent', 'mirrorpond', 'dodge', 'speedup', 'rockcrush', 'charge', 'martialarts' ],
+			moves: [ 'hindkick', 'onetwohit', 'hopefulstrike', 'rectify', 'hiddentalent', 'mirrorpond', 'dodge', 'speedup', 'rockcrush', 'charge', 'martialarts' ],
 			abilities: [ 'bruteforce', 'determination' ]
 		},
 		'derpyhooves': {
@@ -393,7 +393,7 @@ var dexData = {
 				spd: 115,
 				spe: 98
 			},
-			moves: [ 'hindkick', 'one-twohit', 'flitabout', 'hiddentalent', 'gethype', 'balefire', 'joke', 'tackle', 'mirrorpond', 'treat', 'glomp', 'snuggle', 'bubbleburst', 'dodge', 'stormcloud', 'speedup', 'skydive' ],
+			moves: [ 'hindkick', 'onetwohit', 'flitabout', 'hiddentalent', 'gethype', 'balefire', 'joke', 'tackle', 'mirrorpond', 'treat', 'glomp', 'snuggle', 'bubbleburst', 'dodge', 'stormcloud', 'speedup', 'skydive' ],
 			abilities: [ 'indifference', 'mildness' ]
 		},
 		'diamondtiara': {
@@ -609,7 +609,7 @@ var dexData = {
 				spd: 73,
 				spe: 25
 			},
-			moves: [ 'tackle', 'one-twohit', 'hiddentalent', 'wildweed', 'entrench', 'mirrorpond', 'crazystunt', 'hopefulstrike', 'dodge', 'applebuck', 'loveandcare', 'hindkick', 'venompotion' ],
+			moves: [ 'tackle', 'onetwohit', 'hiddentalent', 'wildweed', 'entrench', 'mirrorpond', 'crazystunt', 'hopefulstrike', 'dodge', 'applebuck', 'loveandcare', 'hindkick', 'venompotion' ],
 			abilities: [ '' ]
 		},
 		'gustavelegrand': {
@@ -627,7 +627,7 @@ var dexData = {
 				spd: 89,
 				spe: 61
 			},
-			moves: [ 'one-twohit', 'talonstrike', 'hiddentalent', 'mirrorpond', 'surprisehit', 'sneakattack', 'dodge' ],
+			moves: [ 'onetwohit', 'talonstrike', 'hiddentalent', 'mirrorpond', 'surprisehit', 'sneakattack', 'dodge' ],
 			abilities: [ 'mastery' ]
 		},
 		'homage': {
@@ -699,7 +699,7 @@ var dexData = {
 				spd: 60,
 				spe: 126
 			},
-			moves: [ 'tackle', 'one-twohit', 'nightwind', 'hiddentalent', 'schemeup', 'innerfocus', 'mirrorpond', 'ragingspree', 'daredevilry', 'practice', 'sneakattack', 'dodge', 'speedup', 'charge', 'skydive' ],
+			moves: [ 'tackle', 'onetwohit', 'nightwind', 'hiddentalent', 'schemeup', 'innerfocus', 'mirrorpond', 'ragingspree', 'daredevilry', 'practice', 'sneakattack', 'dodge', 'speedup', 'charge', 'skydive' ],
 			abilities: [ 'stubborn', 'determination' ]
 		},
 		'limestonepie': {
@@ -717,29 +717,11 @@ var dexData = {
 				spd: 72,
 				spe: 83
 			},
-			moves: [ 'rockthrow', 'one-twohit', 'rectify', 'hiddentalent', 'surprisehit', 'stealthdiamonds', 'relax', 'innerfocus', 'gemstorm', 'eeriesonata', 'boulderbomb', 'hopefulstrike', 'mirrorpond', 'practice', 'sneakattack', 'dodge' ],
+			moves: [ 'rockthrow', 'onetwohit', 'rectify', 'hiddentalent', 'surprisehit', 'stealthdiamonds', 'relax', 'innerfocus', 'gemstorm', 'eeriesonata', 'boulderbomb', 'hopefulstrike', 'mirrorpond', 'practice', 'sneakattack', 'dodge' ],
 			abilities: [ 'ataraxy' ]
 		},
-		'littlestrongheart': {
-			num: 40,
-			name: "Little Strongheart",
-			type: [ 'SPIRIT', 'PASSION' ],
-			race: 'ungulate',
-			sex: 'F',
-			img: 'LittleStrongheart/stand_right.gif',
-			stats: {
-				hp:  75,
-				atk: 90,
-				def: 70,
-				spa: 45,
-				spd: 65,
-				spe: 105
-			},
-			moves: [ 'tackle', 'hiddentalent', 'whirlinghoof', 'stalking', 'mirrorpond', 'hollerout', 'stampede', 'dodge', 'speedup', 'practice', 'hindkick' ],
-			abilities: [ '' ]
-		},
 		'littlepip': {
-			num: 41,
+			num: 40,
 			name: "Littlepip",
 			type: [ 'LIGHT', 'KINDNESS' ],
 			race: 'unicorn',
@@ -755,6 +737,24 @@ var dexData = {
 			},
 			moves: [ 'kineticstrike', 'rectify', 'heavymassage', 'hiddentalent', 'meditation', 'enlighten', 'balefire', 'stalking', 'mirrorpond', 'daredevilry', 'hopefulstrike', 'surprisehit', 'schemeup', 'sneakattack', 'dodge', 'tackle', 'magicblast', 'telekinesis', 'sharpnails', 'bulletshower' ],
 			abilities: [ 'leadership', 'diehard', 'toughbody' ]
+		},
+		'littlestrongheart': {
+			num: 41,
+			name: "Little Strongheart",
+			type: [ 'SPIRIT', 'PASSION' ],
+			race: 'ungulate',
+			sex: 'F',
+			img: 'LittleStrongheart/stand_right.gif',
+			stats: {
+				hp:  75,
+				atk: 90,
+				def: 70,
+				spa: 45,
+				spd: 65,
+				spe: 105
+			},
+			moves: [ 'tackle', 'hiddentalent', 'whirlinghoof', 'stalking', 'mirrorpond', 'hollerout', 'stampede', 'dodge', 'speedup', 'practice', 'hindkick' ],
+			abilities: [ '' ]
 		},
 		'lotus': {
 			num: 42,
@@ -807,7 +807,7 @@ var dexData = {
 				spd: 90,
 				spe: 70
 			},
-			moves: [ 'rockthrow', 'one-twohit', 'heavymassage', 'hiddentalent', 'talkout', 'mirrorpond', 'practice', 'sneakattack', 'dodge' ],
+			moves: [ 'rockthrow', 'onetwohit', 'heavymassage', 'hiddentalent', 'talkout', 'mirrorpond', 'practice', 'sneakattack', 'dodge' ],
 			abilities: [ '' ]
 		},
 		'maudpie': {
@@ -1077,7 +1077,7 @@ var dexData = {
 				spd: 135,
 				spe: 75
 			},
-			moves: [ 'tackle', 'sparklingorb', 'one-twohit', 'nightwind', 'spatreatment', 'hiddentalent', 'talkout', 'enlighten', 'mirrorpond', 'snuggle', 'bindup', 'dodge', 'duckface', 'stealthdiamonds', 'relax', 'gemstorm', 'martialarts' ],
+			moves: [ 'tackle', 'sparklingorb', 'onetwohit', 'nightwind', 'spatreatment', 'hiddentalent', 'talkout', 'enlighten', 'mirrorpond', 'snuggle', 'bindup', 'dodge', 'duckface', 'stealthdiamonds', 'relax', 'gemstorm', 'martialarts' ],
 			abilities: [ 'mastery', 'charity', 'shiningcoat' ]
 		},
 		'roxie': {
@@ -1095,7 +1095,7 @@ var dexData = {
 				spd: 65,
 				spe: 108
 			},
-			moves: [ 'one-twohit', 'heavymassage', 'hiddentalent', 'talkout', 'mirrorpond', 'snuggle', 'chatter', 'dodge', 'relax', 'tackle', 'sneakattack', 'ragingspree', 'glomp' ],
+			moves: [ 'onetwohit', 'heavymassage', 'hiddentalent', 'talkout', 'mirrorpond', 'snuggle', 'chatter', 'dodge', 'relax', 'tackle', 'sneakattack', 'ragingspree', 'glomp' ],
 			abilities: [ 'appeal' ]
 		},
 		'scootaloo': {
@@ -1113,29 +1113,11 @@ var dexData = {
 				spd: 60,
 				spe: 130
 			},
-			moves: [ 'tackle', 'one-twohit', 'drumbang', 'hiddentalent', 'stalking', 'mirrorpond', 'ragingspree', 'crazystunt', 'hollerout', 'practice', 'relayrace', 'dodge', 'speedup', 'duckface' ],
+			moves: [ 'tackle', 'onetwohit', 'drumbang', 'hiddentalent', 'stalking', 'mirrorpond', 'ragingspree', 'crazystunt', 'hollerout', 'practice', 'relayrace', 'dodge', 'speedup', 'duckface' ],
 			abilities: [ '' ]
 		},
-		'screwloose': {
-			num: 62,
-			name: "Screw Loose",
-			type: [ 'CHAOS' ],
-			race: 'earthpony',
-			sex: 'F',
-			img: 'ScrewLoose/stand_right.gif',
-			stats: {
-				hp:  90,
-				atk: 90,
-				def: 90,
-				spa: 60,
-				spd: 60,
-				spe: 60
-			},
-			moves: [ 'one-twohit', 'hiddentalent', 'gethype', 'mirrorpond', 'hollerout', 'surprisehit', 'wreakhavoc', 'dodge', 'joke', 'chaosburst' ],
-			abilities: [ 'spellrefractory' ]
-		},
 		'screwball': {
-			num: 63,
+			num: 62,
 			name: "Screwball",
 			type: [ 'CHAOS' ],
 			race: 'earthpony',
@@ -1151,6 +1133,24 @@ var dexData = {
 			},
 			moves: [ 'hiddentalent', 'sonicbarrier', 'entrench', 'mirrorpond', 'dimensiontwist', 'stampede', 'wreakhavoc', 'dodge', 'joke', 'chaosburst' ],
 			abilities: [ 'escapist' ]
+		},
+		'screwloose': {
+			num: 63,
+			name: "Screw Loose",
+			type: [ 'CHAOS' ],
+			race: 'earthpony',
+			sex: 'F',
+			img: 'ScrewLoose/stand_right.gif',
+			stats: {
+				hp:  90,
+				atk: 90,
+				def: 90,
+				spa: 60,
+				spd: 60,
+				spe: 60
+			},
+			moves: [ 'onetwohit', 'hiddentalent', 'gethype', 'mirrorpond', 'hollerout', 'surprisehit', 'wreakhavoc', 'dodge', 'joke', 'chaosburst' ],
+			abilities: [ 'spellrefractory' ]
 		},
 		'seabreeze': {
 			num: 64,
@@ -1239,7 +1239,7 @@ var dexData = {
 				spd: 76,
 				spe: 123
 			},
-			moves: [ 'tackle', 'one-twohit', 'hiddentalent', 'trailblazer', 'mirrorpond', 'crazystunt', 'practice', 'dodge', 'speedup', 'charge', 'skydive' ],
+			moves: [ 'tackle', 'onetwohit', 'hiddentalent', 'trailblazer', 'mirrorpond', 'crazystunt', 'practice', 'dodge', 'speedup', 'charge', 'skydive' ],
 			abilities: [ '' ]
 		},
 		'spike': {
@@ -1275,7 +1275,7 @@ var dexData = {
 				spd: 85,
 				spe: 135
 			},
-			moves: [ 'tackle', 'one-twohit', 'nightwind', 'hiddentalent', 'trailblazer', 'mirrorpond', 'crazystunt', 'practice', 'dodge', 'speedup', 'charge', 'skydive' ],
+			moves: [ 'tackle', 'onetwohit', 'nightwind', 'hiddentalent', 'trailblazer', 'mirrorpond', 'crazystunt', 'practice', 'dodge', 'speedup', 'charge', 'skydive' ],
 			abilities: [ 'devotion' ]
 		},
 		'starswirl': {
@@ -1293,7 +1293,7 @@ var dexData = {
 				spd: 100,
 				spe: 100
 			},
-			moves: [ 'icycannon', 'one-twohit', 'rectify', 'hiddentalent', 'wildweed', 'nap', 'surprisehit', 'stealthdiamonds', 'stormcloud', 'wreakhavoc', 'talkout', 'repeat', 'powerdisplay', 'magicshield', 'lullaby', 'dimensiontwist', 'bindup', 'sonicbarrier', 'meditation', 'enlighten', 'balefire', 'mirrorpond', 'teleportblast', 'darkmagic', 'schemeup', 'dodge', 'magicblast', 'hornbeam', 'freezespell', 'scorchingbeam', 'glowinglaser' ],
+			moves: [ 'icycannon', 'onetwohit', 'rectify', 'hiddentalent', 'wildweed', 'nap', 'surprisehit', 'stealthdiamonds', 'stormcloud', 'wreakhavoc', 'talkout', 'repeat', 'powerdisplay', 'magicshield', 'lullaby', 'dimensiontwist', 'bindup', 'sonicbarrier', 'meditation', 'enlighten', 'balefire', 'mirrorpond', 'teleportblast', 'darkmagic', 'schemeup', 'dodge', 'magicblast', 'hornbeam', 'freezespell', 'scorchingbeam', 'glowinglaser' ],
 			abilities: [ 'selfconfidence' ]
 		},
 		'sunsetshimmer': {
@@ -1401,7 +1401,7 @@ var dexData = {
 				spd: 50,
 				spe: 70
 			},
-			moves: [ 'one-twohit', 'hiddentalent', 'ragingspree', 'stalking', 'sharpnails', 'schemeup', 'scareaway', 'powerdisplay', 'mirrorpond', 'dissonance', 'chaosburst', 'bully' ],
+			moves: [ 'onetwohit', 'hiddentalent', 'ragingspree', 'stalking', 'sharpnails', 'schemeup', 'scareaway', 'powerdisplay', 'mirrorpond', 'dissonance', 'chaosburst', 'bully' ],
 			abilities: [ 'aversion' ]
 		},
 		'trenderhoof': {
@@ -1491,7 +1491,7 @@ var dexData = {
 				spd: 50,
 				spe: 65
 			},
-			moves: [ 'tackle', 'one-twohit', 'hiddentalent', 'mirrorpond', 'daredevilry', 'treat', 'hopefulstrike', 'stampede', 'sneakattack', 'dodge', 'hindkick', 'skydive', 'rockcrush', 'innerfocus' ],
+			moves: [ 'tackle', 'onetwohit', 'hiddentalent', 'mirrorpond', 'daredevilry', 'treat', 'hopefulstrike', 'stampede', 'sneakattack', 'dodge', 'hindkick', 'skydive', 'rockcrush', 'innerfocus' ],
 			abilities: [ 'determination' ]
 		},
 		'xenith': {
@@ -1509,7 +1509,7 @@ var dexData = {
 				spd: 69,
 				spe: 123
 			},
-			moves: [ 'one-twohit', 'hiddentalent', 'balefire', 'stalking', 'mirrorpond', 'powerdisplay', 'scareaway', 'daredevilry', 'surprisehit', 'sneakattack', 'dodge', 'tackle', 'mysteriousbrew', 'martialarts', 'venompotion' ],
+			moves: [ 'onetwohit', 'hiddentalent', 'balefire', 'stalking', 'mirrorpond', 'powerdisplay', 'scareaway', 'daredevilry', 'surprisehit', 'sneakattack', 'dodge', 'tackle', 'mysteriousbrew', 'martialarts', 'venompotion' ],
 			abilities: [ 'bruteforce', 'diehard', 'pestresilience' ]
 		},
 		'zecora': {
@@ -2152,8 +2152,8 @@ var dexData = {
 			prority: 0,
 			description: "20% to lower target SpD."
 		},
-		'': {
-			name: "",
+		'onetwohit': {
+			name: "One-Two Hit",
 			type: 'SPIRIT',
 			movetype: 'PHYSICAL',
 			pp: 15,
@@ -2422,16 +2422,6 @@ var dexData = {
 			prority: 1,
 			description: "Has 33% recoil."
 		},
-		'spatreatment': {
-			name: "Spa Treatment",
-			type: 'LIGHT',
-			movetype: 'STATUS',
-			pp: 25,
-			damage: 0,
-			accuracy: -1,
-			prority: 0,
-			description: "Heals team's negative statuses."
-		},
 		'sparklingorb': {
 			name: "Sparkling Orb",
 			type: 'GENEROSITY',
@@ -2441,6 +2431,16 @@ var dexData = {
 			accuracy: 95,
 			prority: 0,
 			description: "10% to lower enemy's accuracy"
+		},
+		'spatreatment': {
+			name: "Spa Treatment",
+			type: 'LIGHT',
+			movetype: 'STATUS',
+			pp: 25,
+			damage: 0,
+			accuracy: -1,
+			prority: 0,
+			description: "Heals team's negative statuses."
 		},
 		'speedup': {
 			name: "Speed Up",
