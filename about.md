@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![Screenshot from the game](/assets/screen1.png)
+
 Pok&eacute;pon is an [open source](https://github.com/silverweed/pokepon) Pok&eacute;mon-like
 videogame featuring characters from the My Little Pony universe.
 
