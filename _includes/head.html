@@ -10,5 +10,12 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="stylesheet" href="{{ "/css/ponydex.css" | prepend: site.baseurl }}">
+  {% if page.title == "Ponydex" or page.title == "Typechart" %}
+  <link rel="stylesheet" href="{{ "/css/types.css" | prepend: site.baseurl }}"/>
+  {% endif %}
+  {% if page.title == "Ponydex" %}
+  <link rel="stylesheet" href="{{ "/css/ponydex.css" | prepend: site.baseurl }}"/>
+  {% elsif page.title == "Typechart" %}
+  <link rel="stylesheet" href="{{ "/css/typechart.css" | prepend: site.baseurl }}"/>
+  {% endif %}
 </head>

@@ -1,0 +1,38 @@
+---
+---
+.typechart {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	text-align: center;
+	th {
+		vertical-align: middle;
+		width: 50px;
+		height: 40px;
+		font-size: 80%;
+		text-align: center;
+		border: 1px solid;
+		border-radius: 4px;
+		font-weight: bold;
+	}
+	.good {
+		color: green;
+		border-color: green;
+		background-color: lightgreen;
+	}
+	.normal {
+		color: white;
+		border-color: #ccc;
+		background-color: white;
+	}
+	.bad {
+		color: red;
+		border-color: red;
+		background-color: #FF8888;
+	}
+	.immune {
+		color: #FFFF66;
+		border-color: #FFFF66;
+		background-color: #222222;
+	}
+}
