@@ -45,10 +45,10 @@ foreach $line (<STREAM>) {
 		} elsif($line =~ /base[A-Z][a-z]+ = ([0-9]+)/) {
 			push(@stats, $1); 
 
-		} elsif($line =~ /learnableMoves\.put\("([A-Za-z\s]+)\"/) {
+		} elsif($line =~ /learnableMoves\.put\("([A-Za-z\s'\-]+)\"/) {
 			push(@moves, $1);
 
-		} elsif($line =~ /possibleAbilities\[[0-9]+\] = \"([A-Za-z\s]+)\"/) {
+		} elsif($line =~ /possibleAbilities\[[0-9]+\] = \"([A-Za-z\s'\-]+)\"/) {
 			push(@abilities, $1);
 		}
 	} elsif($type eq 'move') {

@@ -23,28 +23,28 @@ for FILE in $ENTRY_FILES; do
 	NOGIF=$(isnogif $FILE)
 	./make_data_entry.pl "$FILE" pony $n $NOGIF
 	let n++
-done | head -n-1
-echo -e "\t\t}\n\t},"
+done
+echo -e "\t},"
 
 echo -e "\tmoves: {"
 ENTRY_FILES=$(ls $ROOT/move/*.java | grep -v Move.java)
 for FILE in $ENTRY_FILES; do
 	./make_data_entry.pl "$FILE" move
-done | head -n-1
-echo -e "\t\t}\n\t},"
+done 
+echo -e "\t},"
 
 echo -e "\tabilities: {"
 ENTRY_FILES=$(ls $ROOT/ability/*.java | grep -v Ability.java)
 for FILE in $ENTRY_FILES; do
 	./make_data_entry.pl "$FILE" item
-done | head -n-1
-echo -e "\t\t}\n\t},"
+done 
+echo -e "\t},"
 
 echo -e "\titems: {"
 ENTRY_FILES=$(ls $ROOT/item/*.java | grep -v Item.java)
 for FILE in $ENTRY_FILES; do
 	./make_data_entry.pl "$FILE" item
-done | head -n-1
-echo -e "\t\t}\n\t},"
+done 
+echo -e "\t},"
 
 echo "}"
