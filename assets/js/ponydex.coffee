@@ -69,7 +69,6 @@ class Ponydex
 	@emitHTMLfor: (type, elem) ->
 		html = ''
 		key = Utils.getKeyOf dexData[type], elem
-		console.log "type: #{type}. elem: #{elem}, key: #{key}"
 		switch type
 			when 'ponies'
 				bst = 0
