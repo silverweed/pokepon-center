@@ -26,7 +26,7 @@ class Ponydex
 	###
 	constructor: (opts) ->
 		# the dex data
-		@data = opts?.data || dexData
+		@data = opts?.data ? dexData
 		@results = document.getElementById Ponydex.defaults.resultsId
 
 	dump: () -> console.log @data
@@ -42,7 +42,7 @@ class Ponydex
 			headerSet = {}
 			for type of @data
 				for elem of @data[type]
-					if elem.startsWith str.replace(///\s+///g, "").toLowerCase()
+					if elem.startsWith str.replace(/\s+/g, "").toLowerCase()
 						unless headerSet[type]?
 							ul.innerHTML += "<li class='result-header'><a href='#' onclick='Ponydex.showAll(\"#{type}\")'><h3>#{type}</h3></a></li>"
 							headerSet[type] = true
@@ -55,8 +55,7 @@ class Ponydex
 		ul = document.createElement 'ul'
 		panel.appendChild ul
 		ul.innerHTML += "<li class='result-header'><a href='#' onclick='Ponydex.showAll(\"#{type}\")'><h3>#{type}</h3></a></li>"
-		for e of dexData[type]
-			ul.innerHTML += Ponydex.emitHTMLfor type, dexData[type][e]
+		ul.innerHTML += Ponydex.emitHTMLfor type, e for _, e of dexData[type]
 		@showPanel()
 			
 	@emitTypingHTML: (typing) ->
@@ -72,8 +71,7 @@ class Ponydex
 		switch type
 			when 'ponies'
 				bst = 0
-				for stat of elem.stats
-					bst += elem.stats[stat]
+				bst += stat for _, stat of elem.stats
 				sprite = "<span class=\"result-sprite\" style='background: url(\"/assets/spritesheet.png\") scroll -#{(elem.num % 16) * 32}px -#{Math.floor(elem.num / 16) * 32}px transparent'></span>"
 				html = """
 					<li class="result">
@@ -126,7 +124,7 @@ class Ponydex
 						    <td>#{conv elem.pp}</td>
 						</tr>
 						</table>
-						<span class="result-desc">#{elem.description.replace ///<br.?>///g, ' '}</span>
+						<span class="result-desc">#{elem.description.replace /<br.?>/g, ' '}</span>
 					    </a>
 					</li>"""
 			else
@@ -134,7 +132,7 @@ class Ponydex
 					<li class="result">
 					    <a href='#' class='dexentry' data-type='#{type}' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{type}")'>
 						<span class="result-name">#{elem.name}</span>
-						<span class="result-desc">#{elem.description.replace ///<br.?>///g, ' '}</span>
+						<span class="result-desc">#{elem.description.replace /<br.?>/g, ' '}</span>
 					    </a>
 					</li>"""
 	
@@ -185,7 +183,7 @@ class Ponydex
 				panel.innerHTML = """
 					<h3>#{elem.name}</h3>
 					<div>
-					    <img src="/assets/sprites/#{elem.img || elem.name.replace(///[\ ']///g, '') + "/stand_right.gif"}" alt=#{elem.name} />
+					    <img src="/assets/sprites/#{elem.img ? elem.name.replace(/[\ ']/g, '') + "/stand_right.gif"}" alt=#{elem.name} />
 					    <dl>
 						<dt>Types:</dt>
 						<dd>#{@emitTypingHTML elem.type}</dd>
@@ -224,7 +222,7 @@ class Ponydex
 						<dt>Accuracy:</dt>
 						<dd class='dd-desc'>#{conv elem.accuracy}</dd>
 						<dt>Description:</dt>
-						<dd class='dd-desc'>#{elem.description.replace ///<br.?>///g, ' '}</dd>
+						<dd class='dd-desc'>#{elem.description.replace /<br.?>/g, ' '}</dd>
 						<dt>Type:</dt>
 						<dd>
 						    <span class="type type-#{elem.type.toLowerCase()}">#{elem.type}</span>
@@ -246,7 +244,7 @@ class Ponydex
 					<div>
 					    <dl>
 						<dt>Description:</dt>
-						<dd class='dd-desc'>#{elem.description.replace ///<br.?>///g, ' '}</dd>
+						<dd class='dd-desc'>#{elem.description.replace /<br.?>/g, ' '}</dd>
 						<dt></dt>
 						<dt>Ponies</dt>
 						<dd>
@@ -286,16 +284,12 @@ class Ponydex
 	
 	@poniesWhichCanLearn: (moveName) ->
 		ponies = []
-		for pony of dexData.ponies
-			if moveName in dexData.ponies[pony].moves
-				ponies.push dexData.ponies[pony]
+		ponies.push pony for _, pony of dexData.ponies when moveName in pony.moves
 		return ponies
 	
 	@poniesWithAbility: (abiName) ->
 		ponies = []
-		for pony of dexData.ponies
-			if abiName in dexData.ponies[pony].abilities
-				ponies.push dexData.ponies[pony]
+		ponies.push pony for _, pony of dexData.ponies when abiName in pony.abilities
 		return ponies
 	
 window.Ponydex = Ponydex
