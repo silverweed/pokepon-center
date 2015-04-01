@@ -4,6 +4,7 @@
 	Ponydex
 	Lists and shows detailed info about ponies, moves, abilities and items.
 	@author Silverweed
+	@license MIT license
 ###
 
 class Ponydex
