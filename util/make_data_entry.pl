@@ -87,6 +87,8 @@ foreach $line (<STREAM>) {
 }
 close(STREAM);
 
+die unless length($name) > 0;
+
 if($type eq 'pony') {
 	# emit JS code for a single pony
 	print 
