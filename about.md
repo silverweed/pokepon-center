@@ -19,5 +19,4 @@ Battling is [already possible](https://github.com/silverweed/pokepon/blob/master
 
 1. [GitHub issues](https://github.com/silverweed/pokepon/issues) (requires a GitHub account)
 2. [Comment on the bugs page](/bugs) (allows guest posting)
-3. [Add a line here](http://derpy.me/pokepon)
-4. [Mail me](mailto:silverweed1991@gmail.com)
+3. [Mail me](mailto:silverweed1991@gmail.com)
