@@ -4,7 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+  <meta name="author" content="{{ site.author }}"/>
   
   <link rel='shortcut icon' href='favicon.ico?v=30012015'/>
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
@@ -12,10 +13,10 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   {% if page.title == "Ponydex" or page.title == "Typechart" %}
   <link rel="stylesheet" href="{{ "/css/types.css" | prepend: site.baseurl }}"/>
-  {% endif %}
   {% if page.title == "Ponydex" %}
   <link rel="stylesheet" href="{{ "/css/ponydex.css" | prepend: site.baseurl }}"/>
   {% elsif page.title == "Typechart" %}
   <link rel="stylesheet" href="{{ "/css/typechart.css" | prepend: site.baseurl }}"/>
+  {% endif %}
   {% endif %}
 </head>

@@ -2128,16 +2128,6 @@ var dexData = {
 			prority: 0,
 			description: "Spend 1/4 HP to create a<br>dummy target for the enemy."
 		},
-		'': {
-			name: "",
-			type: '',
-			movetype: '',
-			pp: 0,
-			damage: 0,
-			accuracy: 0,
-			prority: 0,
-			description: ""
-		},
 		'mustache': {
 			name: "Mustache",
 			type: 'LOVE',
