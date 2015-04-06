@@ -42,12 +42,11 @@ class Ponydex
 			@results.appendChild ul
 			headerSet = {}
 			for type of @data
-				for elem of @data[type]
-					if elem.startsWith str.replace(/\s+/g, "").toLowerCase()
-						unless headerSet[type]?
-							ul.innerHTML += "<li class='result-header'><a href='#' onclick='Ponydex.showAll(\"#{type}\")'><h3>#{type}</h3></a></li>"
-							headerSet[type] = true
-						ul.innerHTML += Ponydex.emitHTMLfor type, @data[type][elem]
+				for elem of @data[type] when elem.startsWith str.replace(/\s+/g, "").toLowerCase()
+					unless headerSet[type]?
+						ul.innerHTML += "<li class='result-header'><a href='#' onclick='Ponydex.showAll(\"#{type}\")'><h3>#{type}</h3></a></li>"
+						headerSet[type] = true
+					ul.innerHTML += Ponydex.emitHTMLfor type, @data[type][elem]
 		return
 	
 	@showAll: (type) ->
