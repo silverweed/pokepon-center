@@ -3,6 +3,9 @@ layout: page
 title: Pok&eacute;pon documentation
 custom_title: Docs
 permalink: /doc/
+sitemap:
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 Are you a programmer? Interested in understanding the Pok&eacute;pon code so you can

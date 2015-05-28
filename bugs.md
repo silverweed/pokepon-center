@@ -2,6 +2,9 @@
 layout: page
 title: Bugs
 permalink: /bugs/
+sitemap:
+  priority: 0.55
+  changefreq: 'yearly'
 ---
 
 Bugs are known to happen to any software under development, and Pok&eacute;pon doesn't make an exception.
