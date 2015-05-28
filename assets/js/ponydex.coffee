@@ -186,7 +186,7 @@ class Ponydex
 					    <img src="/assets/sprites/#{elem.img ? elem.name.replace(/[\ ']/g, '') + "/stand_right.gif"}" alt=#{elem.name} />
 					    <dl>
 						<dt>Types:</dt>
-						<dd>#{@emitTypingHTML elem.type}</dd>
+						<dd style='cursor: help' title="#{@emitWksRes elem.type}">#{@emitTypingHTML elem.type}</dd>
 						<dt>Abilities:</dt>
 						<dd>#{abi}</dd>
 						<dt></dt>
@@ -295,5 +295,35 @@ class Ponydex
 		ponies = []
 		ponies.push pony for _, pony of dexData.ponies when abiName in pony.abilities
 		return ponies
+
+	@emitWksRes: (typing) ->
+		return unless Typechart? and typing instanceof Array
+		wks = {}
+		res = {}
+		imm = {}
+		for atktype, values of Typechar
+			# [type]attacker => [values]{ defender: multiplier }
+			for type in typing
+				if values[type]?
+					if values[type] == 0 and not imm[type]?
+						wks[type] = res[type] = undefined
+						imm[type] = true
+						continue
+					map = if values[type] > 1 then wks else res
+					if map[atktype]?
+						map[atktype] *= values[type]
+					else
+						map[atktype] = values[type]
+		s = ""
+		unless wks.length < 1
+			s += "Weak to:\n"
+			s += "  #{type} (#{mul}x)\n" for type, mul of wks
+		unless res.length < 1
+			s += "Resists to:\n"
+			s += "  #{type} (#{mul}x)\n" for type, mul of res
+		unless imm.length < 1
+			s += "Immune to:\n"
+			s += "  #{type}" for type of imm
+		return s
 	
 window.Ponydex = Ponydex
