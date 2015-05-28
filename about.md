@@ -2,6 +2,9 @@
 layout: page
 title: About
 permalink: /about/
+sitemap:
+  priority: 0.9
+  changefreq: 'monthly'
 ---
 
 ![Screenshot from the game](/assets/screen1.png)

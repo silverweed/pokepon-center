@@ -57,6 +57,7 @@ $on-laptop:        800px;
 
 
 table.servers {
+    margin: auto;
     padding: 8px;
     border-collapse: collapse;
     th {
@@ -66,6 +67,12 @@ table.servers {
     td {
 	width: 230px;
 	padding: 8px;
+	&.down {
+	    color: #FF3333;
+	    &::after {
+	        content: " [currently down]";
+            }
+	}
     }
     tr {
 	height: 40px;
