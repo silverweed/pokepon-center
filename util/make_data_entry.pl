@@ -2,7 +2,6 @@
 
 require 5.013022;
 use strict;
-use warnings;
 
 my $file = $ARGV[0];
 my $type = $ARGV[1];
@@ -22,7 +21,7 @@ my $damage = 0;
 my $accuracy = 0;
 my $priority = 0;
 my $desc;
-my @stats;
+my @stats = [0,0,0,0,0,0];
 my @moves;
 my @type;
 my @abilities;
@@ -42,8 +41,20 @@ foreach $line (<STREAM>) {
 		} elsif($line =~ /sex = Sex\.([MF]).+/) {
 			$sex = $1;
 
-		} elsif($line =~ /base[A-Z][a-z]+ = ([0-9]+)/) {
-			push(@stats, $1); 
+		} elsif($line =~ /base(Hp|Atk|Def|Spatk|Spdef|Speed) = ([0-9]+)/) {
+			if($1 eq 'Hp') {
+				$stats[0] = $2;
+			} elsif($1 eq 'Atk') {
+				$stats[1] = $2;
+			} elsif($1 eq 'Def') {
+				$stats[2] = $2;
+			} elsif($1 eq 'Spatk') {
+				$stats[3] = $2;
+			} elsif($1 eq 'Spdef') {
+				$stats[4] = $2;
+			} elsif($1 eq 'Speed') {
+				$stats[5] = $2;
+			}
 
 		} elsif($line =~ /learnableMoves\.put\("([A-Za-z\s'\-]+)\"/) {
 			push(@moves, $1);

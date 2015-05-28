@@ -424,8 +424,8 @@ var dexData = {
 			stats: {
 				hp:  125,
 				atk: 105,
-				def: 130,
-				spa: 120,
+				def: 120,
+				spa: 130,
 				spd: 85,
 				spe: 85
 			},
@@ -1270,8 +1270,8 @@ var dexData = {
 			stats: {
 				hp:  1,
 				atk: 40,
-				def: 99,
-				spa: 30,
+				def: 30,
+				spa: 99,
 				spd: 45,
 				spe: 75
 			},
