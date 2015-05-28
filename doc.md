@@ -17,6 +17,8 @@ Be aware that the code is far from being fully documented, and the comments are
 mostly written in a HTML-unfriendly way, so browsing the docs may not be the
 best experience you'll ever have, but at least it's something.
 
+A brief and WIP documentation on the protocols used [is also available](/protocols.html).
+
 If you're *really* interested in contributing / understanding some parts of the code,
 feel free to [contact me](mailto:silverweed1991@gmail.com) so we can talk about it.
 If I see some people are interested in the documentation, I'll work harder to improve
