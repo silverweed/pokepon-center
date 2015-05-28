@@ -1,3 +1,5 @@
+---
+---
 window.Typechart =
 	# attacker:
 	#	defender: multiplier
