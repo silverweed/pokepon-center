@@ -301,29 +301,32 @@ class Ponydex
 		wks = {}
 		res = {}
 		imm = {}
-		for atktype, values of Typechar
+		for atktype, values of Typechart
 			# [type]attacker => [values]{ defender: multiplier }
-			for type in typing
+			for _type in typing
+				type = _type.toLowerCase()
+				continue if imm[atktype]
 				if values[type]?
-					if values[type] == 0 and not imm[type]?
-						wks[type] = res[type] = undefined
-						imm[type] = true
+					if values[type] == 0
+						wks[atktype] = res[atktype] = undefined
+						imm[atktype] = true
 						continue
 					map = if values[type] > 1 then wks else res
 					if map[atktype]?
 						map[atktype] *= values[type]
 					else
 						map[atktype] = values[type]
+
 		s = ""
-		unless wks.length < 1
+		if Object.keys(wks)?.length > 0
 			s += "Weak to:\n"
-			s += "  #{type} (#{mul}x)\n" for type, mul of wks
-		unless res.length < 1
+			s += "    #{type} (#{mul}x)\n" for type, mul of wks when mul?
+		if Object.keys(res)?.length > 0
 			s += "Resists to:\n"
-			s += "  #{type} (#{mul}x)\n" for type, mul of res
-		unless imm.length < 1
+			s += "    #{type} (#{mul}x)\n" for type, mul of res when mul?
+		if Object.keys(imm)?.length > 0
 			s += "Immune to:\n"
-			s += "  #{type}" for type of imm
+			s += "    #{type}" for type of imm when type
 		return s
 	
 window.Ponydex = Ponydex
