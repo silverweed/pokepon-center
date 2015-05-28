@@ -30,7 +30,7 @@ class Ponydex
 		@data = opts?.data ? dexData
 		@results = document.getElementById Ponydex.defaults.resultsId
 
-	dump: () -> console.log @data
+	dump: -> console.log @data
 
 	# fills @results with the dex data matching `str' by creating a <ul> and appending it to @results.
 	suggest: (str) ->
@@ -136,7 +136,7 @@ class Ponydex
 					    </a>
 					</li>"""
 	
-	@hidePanel: () ->
+	@hidePanel: ->
 		container = document.getElementById @defaults.containerId
 		panel = document.getElementById @defaults.panelId
 		Velocity(panel, {
@@ -148,7 +148,7 @@ class Ponydex
 				width: "100%"
 			}, { duration: 200 }
 
-	@showPanel: () ->
+	@showPanel: ->
 		container = document.getElementById @defaults.containerId
 		panel = document.getElementById @defaults.panelId
 		Velocity(container, {
@@ -258,17 +258,21 @@ class Ponydex
 		return panel
 
 	@emitStatCode: (stats, stat) ->
-		opts = do () ->
+		opts = do ->
 			n = stats[stat]
 			MAX_LEN = 200
 			return {
 				width: Math.min(MAX_LEN, n)
 				color: Math.floor n * 180 / 255
 			}
-		min_ = Math.floor (2 * stats[stat] + 5) * 0.9
-		min = Math.floor 2 * stats[stat] + 5
-		max = Math.floor ((31 + 2 * stats[stat] + 252 / 4) * 100) / 100 + 5
-		maxp = Math.floor (((31 + 2 * stats[stat] + 252 / 4) * 100) / 100 + 5) * 1.1
+		[ min_, min, max, maxp ] = do ->
+			return [ 1, 1, 1, 1 ] if stats[stat] is 1
+			return [
+				Math.floor (2 * stats[stat] + 5) * 0.9
+				Math.floor 2 * stats[stat] + 5
+				Math.floor ((31 + 2 * stats[stat] + 252 / 4) * 100) / 100 + 5
+				Math.floor (((31 + 2 * stats[stat] + 252 / 4) * 100) / 100 + 5) * 1.1
+			]
 		html = """
 			<tr>
 			    <th class='statname'>#{Utils.capitalize stat}:</th>
