@@ -592,7 +592,7 @@ var dexData = {
 				spe: 55
 			},
 			moves: [ 'tackle', 'heavymassage', 'spatreatment', 'hiddentalent', 'wildweed', 'talkout', 'nap', 'mirrorpond', 'practice', 'glomp', 'relayrace', 'poisonjoke', 'dodge', 'shyaway', 'lullaby', 'loveandcare', 'stare' ],
-			abilities: [ 'compassion' ]
+			abilities: [ 'compassion', 'naturalempathy' ]
 		},
 		'gilda': {
 			num: 33,
@@ -1260,8 +1260,26 @@ var dexData = {
 			moves: [ 'bully', 'hiddentalent', 'sonicbarrier', 'entrench', 'mirrorpond', 'hopefulstrike', 'taunt', 'poisonjoke', 'dodge', 'chatter', 'loveandcare' ],
 			abilities: [ 'lovebird' ]
 		},
-		'snails': {
+		'smooze': {
 			num: 70,
+			name: "Smooze",
+			type: [ 'CHAOS', 'MAGIC' ],
+			race: 'mythicbeast',
+			sex: 'M',
+			img: 'Smooze/stand_right.gif',
+			stats: {
+				hp:  1,
+				atk: 40,
+				def: 99,
+				spa: 30,
+				spd: 45,
+				spe: 75
+			},
+			moves: [ 'slimytrap', 'snuggle', 'bindup', 'kineticstrike', 'hiddentalent', 'mirrorpond', 'dimensiontwist', 'surprisehit', 'wreakhavoc', 'dodge', 'joke', 'chaosburst' ],
+			abilities: [ 'shapeless' ]
+		},
+		'snails': {
+			num: 71,
 			name: "Snails",
 			type: [ 'LOYALTY', 'SPIRIT' ],
 			race: 'unicorn',
@@ -1279,7 +1297,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'soarin': {
-			num: 71,
+			num: 72,
 			name: "Soarin",
 			type: [ 'LOYALTY' ],
 			race: 'pegasus',
@@ -1297,7 +1315,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'spike': {
-			num: 72,
+			num: 73,
 			name: "Spike",
 			type: [ 'LOYALTY', 'MAGIC' ],
 			race: 'mythicbeast',
@@ -1315,7 +1333,7 @@ var dexData = {
 			abilities: [ 'dragonscales', 'mildness', 'pestresilience' ]
 		},
 		'spitfire': {
-			num: 73,
+			num: 74,
 			name: "Spitfire",
 			type: [ 'PASSION', 'LOYALTY' ],
 			race: 'pegasus',
@@ -1333,7 +1351,7 @@ var dexData = {
 			abilities: [ 'devotion' ]
 		},
 		'starlightglimmer': {
-			num: 74,
+			num: 75,
 			name: "Starlight Glimmer",
 			type: [ 'MAGIC', 'SHADOW' ],
 			race: 'unicorn',
@@ -1351,7 +1369,7 @@ var dexData = {
 			abilities: [ 'equalize' ]
 		},
 		'starswirl': {
-			num: 75,
+			num: 76,
 			name: "Starswirl",
 			type: [ 'MAGIC' ],
 			race: 'unicorn',
@@ -1369,7 +1387,7 @@ var dexData = {
 			abilities: [ 'selfconfidence' ]
 		},
 		'sugarbelle': {
-			num: 76,
+			num: 77,
 			name: "Sugar Belle",
 			type: [ 'LAUGHTER', 'KINDNESS' ],
 			race: 'unicorn',
@@ -1387,7 +1405,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'sunsetshimmer': {
-			num: 77,
+			num: 78,
 			name: "Sunset Shimmer",
 			type: [ 'LIGHT', 'SHADOW' ],
 			race: 'unicorn',
@@ -1405,7 +1423,7 @@ var dexData = {
 			abilities: [ 'shiningcoat', 'aversion' ]
 		},
 		'surprise': {
-			num: 78,
+			num: 79,
 			name: "Surprise",
 			type: [ 'LOYALTY', 'LAUGHTER' ],
 			race: 'pegasus',
@@ -1423,7 +1441,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'sweetcream': {
-			num: 79,
+			num: 80,
 			name: "Sweetcream",
 			type: [ 'PASSION', 'GENEROSITY' ],
 			race: 'unicorn',
@@ -1441,7 +1459,7 @@ var dexData = {
 			abilities: [ 'sheepseyes' ]
 		},
 		'sweetiebelle': {
-			num: 80,
+			num: 81,
 			name: "Sweetie Belle",
 			type: [ 'GENEROSITY', 'MUSIC' ],
 			race: 'unicorn',
@@ -1459,7 +1477,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'tirek': {
-			num: 81,
+			num: 82,
 			name: "Tirek",
 			type: [ 'SHADOW', 'MAGIC' ],
 			race: 'mythicbeast',
@@ -1477,7 +1495,7 @@ var dexData = {
 			abilities: [ 'magicdrain' ]
 		},
 		'tracy': {
-			num: 82,
+			num: 83,
 			name: "Tracy",
 			type: [ 'SHADOW' ],
 			race: 'earthpony',
@@ -1494,8 +1512,26 @@ var dexData = {
 			moves: [ 'onetwohit', 'hiddentalent', 'ragingspree', 'stalking', 'sharpnails', 'schemeup', 'scareaway', 'powerdisplay', 'mirrorpond', 'dissonance', 'chaosburst', 'bully' ],
 			abilities: [ 'aversion' ]
 		},
+		'treehugger': {
+			num: 84,
+			name: "Tree Hugger",
+			type: [ 'SPIRIT' ],
+			race: 'earthpony',
+			sex: 'F',
+			img: 'TreeHugger/stand_right.gif',
+			stats: {
+				hp:  95,
+				atk: 54,
+				def: 75,
+				spa: 91,
+				spd: 88,
+				spe: 62
+			},
+			moves: [ 'tackle', 'heavymassage', 'spatreatment', 'hiddentalent', 'wildweed', 'talkout', 'nap', 'mirrorpond', 'poisonjoke', 'dodge', 'lullaby', 'loveandcare' ],
+			abilities: [ 'naturalempathy', 'ataraxy' ]
+		},
 		'trenderhoof': {
-			num: 83,
+			num: 85,
 			name: "Trenderhoof",
 			type: [ 'KINDNESS' ],
 			race: 'unicorn',
@@ -1513,7 +1549,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'trixie': {
-			num: 84,
+			num: 86,
 			name: "Trixie",
 			type: [ 'MAGIC', 'PASSION' ],
 			race: 'unicorn',
@@ -1530,8 +1566,26 @@ var dexData = {
 			moves: [ 'hiddentalent', 'balefire', 'mirrorpond', 'teleportblast', 'hopefulstrike', 'taunt', 'dodge', 'tackle', 'magicblast', 'hornbeam', 'freezespell', 'scorchingbeam' ],
 			abilities: [ 'boasting' ]
 		},
+		'troubleshoes': {
+			num: 87,
+			name: "Trouble Shoes",
+			type: [ 'CHAOS', 'LAUGHTER' ],
+			race: 'earthpony',
+			sex: 'M',
+			img: 'TroubleShoes/stand_right.gif',
+			stats: {
+				hp:  135,
+				atk: 150,
+				def: 100,
+				spa: 40,
+				spd: 75,
+				spe: 100
+			},
+			moves: [ 'tackle', 'hindkick', 'wreakhavoc', 'startle', 'shyaway', 'crazystunt', 'rampage', 'hiddentalent', 'entrench', 'mirrorpond', 'dodge', 'applebuck', 'relax' ],
+			abilities: [ 'badluck' ]
+		},
 		'twilightsparkle': {
-			num: 85,
+			num: 88,
 			name: "Twilight Sparkle",
 			type: [ 'MAGIC' ],
 			race: 'unicorn',
@@ -1549,7 +1603,7 @@ var dexData = {
 			abilities: [ 'leadership' ]
 		},
 		'vinylscratch': {
-			num: 86,
+			num: 89,
 			name: "Vinyl Scratch",
 			type: [ 'MUSIC', 'CHAOS' ],
 			race: 'unicorn',
@@ -1567,7 +1621,7 @@ var dexData = {
 			abilities: [ '' ]
 		},
 		'wildfire': {
-			num: 87,
+			num: 90,
 			name: "Wildfire",
 			type: [ 'HONESTY', 'PASSION' ],
 			race: 'pegasus',
@@ -1585,7 +1639,7 @@ var dexData = {
 			abilities: [ 'determination' ]
 		},
 		'xenith': {
-			num: 88,
+			num: 91,
 			name: "Xenith",
 			type: [ 'SPIRIT', 'SHADOW' ],
 			race: 'zebra',
@@ -1603,7 +1657,7 @@ var dexData = {
 			abilities: [ 'bruteforce', 'diehard', 'pestresilience' ]
 		},
 		'zecora': {
-			num: 89,
+			num: 92,
 			name: "Zecora",
 			type: [ 'SPIRIT' ],
 			race: 'zebra',
@@ -2766,6 +2820,10 @@ var dexData = {
 			name: "Aversion",
 			description: "Damages opponent by 1/8 HP when hit by a contact move."
 		},
+		'badluck': {
+			name: "Bad Luck",
+			description: "Upon switch-in, this pony has its Atk and Spe halved for 3 turns."
+		},
 		'boasting': {
 			name: "Boasting",
 			description: "Raises user's SpA if enemy's SpA is greater."
@@ -2850,6 +2908,10 @@ var dexData = {
 			name: "Mildness",
 			description: "Boosts by 50% moves with a base power equal or less than 60."
 		},
+		'naturalempathy': {
+			name: "Natural Empathy",
+			description: "When this pony is statused (except Slp), the status is transferred on enemy."
+		},
 		'nocturnality': {
 			name: "Nocturnality",
 			description: "This pony cannot be set Asleep. +1/8 HP per turn during DARK weather."
@@ -2869,6 +2931,10 @@ var dexData = {
 		'senseofdanger': {
 			name: "Sense Of Danger",
 			description: "Base Speed becomes 100 and Def halves when HP is less or equal than 1/3"
+		},
+		'shapeless': {
+			name: "Shapeless",
+			description: "This pony can only be damaged by super-effective moves."
 		},
 		'sheepseyes': {
 			name: "Sheep's Eyes",
@@ -2904,7 +2970,7 @@ var dexData = {
 		},
 		'tenacity': {
 			name: "Tenacity",
-			description: "Boosts Atk by 50% when user<br>has a negative condition."
+			description: "Boosts Atk by 50% when user has a negative condition."
 		},
 		'toughbody': {
 			name: "Tough Body",
@@ -2916,7 +2982,7 @@ var dexData = {
 		},
 		'uprising': {
 			name: "Uprising",
-			description: "Whenever a stat is lowered,<br>it is instead boosted by 2."
+			description: "Whenever a stat is lowered, it is instead boosted by 2."
 		},
 	},
 	items: {
