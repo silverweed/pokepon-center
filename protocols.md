@@ -1,11 +1,13 @@
 ---
 title: Protocol Documentation
+layout: page
+custom_noshow: true
 sitemap:
   priority: 0.6 
   changefreq: monthly
 ---
 
-Pok&egrave;pon uses a couple of custom application-layer protocols to 
+Pok&eacute;pon uses a couple of custom application-layer protocols to 
 communicate between the client and the server.
 
 The main protocol used is one called *JACK* (Java Awful Client-server Kit),
@@ -18,7 +20,7 @@ Here, the leading `!` specifies the message type, `word` specifies the
 message, and `tokens` is an optional blank-separated list of strings
 which may be used as arguments for the `word` message.
 
-Pok&egrave;pon uses the following message types:
+Pok&eacute;pon uses the following message types:
 
   - A message starting with `!` is a **communication message**
   - A message starting with `/` is a **command**
@@ -32,7 +34,7 @@ which are the classes that parse the incoming messages read from the socket.)
 The connection between the client and the server is set up by a "handshake"
 that has the basic function to reject connections which surely aren't coming
 from Pokepon clients (one may easily write a client complying with the 
-Pok&egrave;pon protocol, though).
+Pok&eacute;pon protocol, though).
 
 As soon as a connection is received, the server sends a `!youros` message,
 to which the client responds with a `!myos <arg>` message. `<arg>` is
@@ -46,7 +48,7 @@ The client also needs to respond any `!ping` message from the server with
 a `!pong` message, or the server will kick it out after the ping times out.
 
 ### Battle messages ###
-During battles, the client and the server communicate via a Pok&egrave;mon
+During battles, the client and the server communicate via a Pok&eacute;mon
 Showdown-like protocol wrapped into the JACK protocol.
 
 More specifically, client and server send messages like:
