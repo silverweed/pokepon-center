@@ -315,7 +315,11 @@ class Ponydex
 					if map[atktype]?
 						map[atktype] *= values[type]
 					else
-						map[atktype] = values[type]
+						other = if map == wks then res else wks
+						if other[atktype]?
+							other[atktype] = undefined
+						else
+							map[atktype] = values[type]
 
 		s = ""
 		if Object.keys(wks)?.length > 0
