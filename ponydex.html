@@ -23,6 +23,23 @@ sitemap:
 <script>
     var dex = new Ponydex();
 
+    var handleHash = function () {
+        var hash = window.location.hash;
+        if (!hash || hash.length < 2) return;
+        hash = hash.slice(1);
+        for (var type in dexData) {
+            if (!dexData.hasOwnProperty(type)) continue;
+            if (type === hash) {
+                Ponydex.showAll(type);
+            } else if (dexData[type].hasOwnProperty(hash)) {
+                Ponydex.createPanel(type, hash);
+            }
+        }
+    };
+
+    window.onhashchange = handleHash;
+    handleHash();
+
     Array.prototype.slice.call(document.querySelectorAll('.dexbar')).map(function (e) {
         e.onkeyup = function (key) {
             dex.suggest(e.value)

@@ -44,7 +44,12 @@ class Ponydex
 			for type of @data
 				for elem of @data[type] when elem.startsWith str.replace(/\s+/g, "").toLowerCase()
 					unless headerSet[type]?
-						ul.innerHTML += "<li class='result-header'><a href='#' onclick='Ponydex.showAll(\"#{type}\")'><h3>#{type}</h3></a></li>"
+						ul.innerHTML += """
+							<li class='result-header'>
+								<a href='##{type}'>
+									<h3>#{type}</h3>
+								</a>
+							</li>"""
 						headerSet[type] = true
 					ul.innerHTML += Ponydex.emitHTMLfor type, @data[type][elem]
 		return
@@ -54,7 +59,7 @@ class Ponydex
 		panel.innerHTML = ""
 		ul = document.createElement 'ul'
 		panel.appendChild ul
-		ul.innerHTML += "<li class='result-header'><a href='#' onclick='Ponydex.showAll(\"#{type}\")'><h3>#{type}</h3></a></li>"
+		ul.innerHTML += "<li class='result-header'><a href='##{type}'><h3>#{type}</h3></a></li>"
 		ul.innerHTML += Ponydex.emitHTMLfor type, e for _, e of dexData[type]
 		@showPanel()
 			
@@ -75,7 +80,7 @@ class Ponydex
 				sprite = "<span class=\"result-sprite\" style='background: url(\"/assets/spritesheet.png\") scroll -#{(elem.num % 16) * 32}px -#{Math.floor(elem.num / 16) * 32}px transparent'></span>"
 				html = """
 					<li class="result">
-					    <a href='#' class='dexentry' data-type='ponies' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{type}")'>
+					    <a href='##{key}' class='dexentry' data-type='ponies' data-key='#{key}'>
 						#{sprite}
 						<span class="result-name">#{elem.name}</span>
 						<span class="result-typing">#{@emitTypingHTML elem.type}</span>
@@ -106,7 +111,7 @@ class Ponydex
 				conv = (x) -> if x <= 0 then return '-' else return x
 				return """
 					<li class="result">
-					    <a href='#' class='dexentry' data-type='moves' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{type}")'>
+					    <a href='##{key}' class='dexentry' data-type='moves' data-key='#{key}'>
 						<span class="result-name">#{elem.name}</span>
 						<span class="result-typing">
 					            <span class="type type-#{elem.type.toLowerCase()}">#{elem.type}</span>
@@ -130,7 +135,7 @@ class Ponydex
 			else
 				return """
 					<li class="result">
-					    <a href='#' class='dexentry' data-type='#{type}' data-key='#{key}' onclick='Ponydex.createPanel(this, "#{type}")'>
+					    <a href='##{key}' class='dexentry' data-type='#{type}' data-key='#{key}'>
 						<span class="result-name">#{elem.name}</span>
 						<span class="result-desc">#{elem.description.replace /<br.?>/g, ' '}</span>
 					    </a>
@@ -159,25 +164,23 @@ class Ponydex
 			Velocity panel, {
 				opacity: "1"
 			}
+		return panel
 
-	@createPanel: (htmlElem, kind) ->
-		data = htmlElem.dataset
-		panel = document.getElementById @defaults.panelId
-		return unless data? and data.type? and data.key? and panel?
-		elem = dexData[data.type][data.key]
+	@createPanel: (type, key) ->
+		elem = dexData[type][key]
 		unless elem
-			console.log "Error: data[#{data.type}][#{data.key}] not found."
+			console.log "Error: data[#{type}][#{key}] not found."
 			return
 
-		@showPanel()
+		panel = @showPanel()
 
-		switch kind
+		switch type
 			when 'ponies'
 				abi = "<em>No ability yet</em>"
 				if elem.abilities[0].length > 0
 					abi = []
 					for a in elem.abilities
-						abi.push "<a href='#' data-type='abilities' data-key='#{a}' onclick='Ponydex.createPanel(this, \"abilities\")'>#{dexData.abilities[a]?.name}</a>"
+						abi.push "<a href='##{a}' data-type='abilities' data-key='#{a}'>#{dexData.abilities[a]?.name}</a>"
 					abi = abi.join " | "
 
 				panel.innerHTML = """
@@ -232,7 +235,7 @@ class Ponydex
 						<dt>Ponies</dt>
 						<dd>
 						    <ul>
-						        #{(@emitHTMLfor "ponies", pony for pony in @poniesWhichCanLearn data.key).join ""}
+						        #{(@emitHTMLfor "ponies", pony for pony in @poniesWhichCanLearn key).join ""}
 						    </ul>
 						</dd>
 					    </dl>
@@ -249,7 +252,7 @@ class Ponydex
 						<dt>Ponies</dt>
 						<dd>
 						    <ul>
-						        #{(@emitHTMLfor "ponies", pony for pony in @poniesWithAbility data.key).join ""}
+						        #{(@emitHTMLfor "ponies", pony for pony in @poniesWithAbility key).join ""}
 						    </ul>
 						</dd>
 					    </dl>
